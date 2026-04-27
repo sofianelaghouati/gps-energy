@@ -29,11 +29,27 @@ const nextConfig: NextConfig = {
         headers: immutableAssetHeaders,
       },
       {
+        source: "/pumpjack.webm",
+        headers: immutableAssetHeaders,
+      },
+      {
+        source: "/roughnecks-1600.jpg",
+        headers: immutableAssetHeaders,
+      },
+      {
+        source: "/flare-stack-1280.jpg",
+        headers: immutableAssetHeaders,
+      },
+      {
         source: "/gps-energy-logo.png",
         headers: immutableAssetHeaders,
       },
       {
         source: "/gps-energy-mark.png",
+        headers: immutableAssetHeaders,
+      },
+      {
+        source: "/gps-energy-logo-premium.svg",
         headers: immutableAssetHeaders,
       },
     ];

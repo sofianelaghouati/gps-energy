@@ -63,9 +63,10 @@ export default async function StandardsPage({ params }: Props) {
       <HomeAnimations />
       <JsonLd data={pageJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
-      <main className="overflow-hidden bg-[#060608] text-white">
+      <main className="overflow-hidden bg-[#557da5] text-white">
         <SiteHeader currentPath="/standards" locale={locale} page="standards" />
         <PageHero
+          backgroundMedia="flareStack"
           eyebrow={pageT("hero.eyebrow")}
           title={pageT("hero.title")}
           copy={pageT("hero.copy")}
@@ -76,10 +77,10 @@ export default async function StandardsPage({ params }: Props) {
           ]}
         />
 
-        <section className="border-b border-white/10 bg-[#060608] px-5 py-18 text-white sm:px-8 lg:px-10">
+        <section className="border-b border-white/10 bg-[#557da5] px-5 py-18 text-white sm:px-8 lg:px-10">
           <div className="mx-auto max-w-7xl">
             <div data-section-reveal data-reveal-from="left" className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase text-[#ff7908]">
+              <p className="text-xs font-semibold uppercase text-[#a38356]">
                 {homeT("safety.eyebrow")}
               </p>
               <h2 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl">
@@ -94,10 +95,11 @@ export default async function StandardsPage({ params }: Props) {
                 <article
                   key={item.key}
                   data-section-reveal
+                  data-premium-card
                   data-reveal-from={standards.indexOf(item) % 2 === 0 ? "left" : "right"}
                   className="border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm"
                 >
-                  <p className="text-sm font-semibold uppercase text-[#ff7908]">
+                  <p className="text-sm font-semibold uppercase text-[#a38356]">
                     {item.title}
                   </p>
                   <p className="mt-4 text-sm leading-6 text-white/68">
@@ -109,10 +111,10 @@ export default async function StandardsPage({ params }: Props) {
           </div>
         </section>
 
-        <section className="bg-[#f4f1ec] px-5 py-18 text-[#101014] sm:px-8 lg:px-10">
+        <section className="bg-[#e7eff6] px-5 py-18 text-[#17334d] sm:px-8 lg:px-10">
           <div className="mx-auto max-w-7xl">
             <div data-section-reveal data-reveal-from="left" className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase text-[#5b48dc]">
+              <p className="text-xs font-semibold uppercase text-[#557da5]">
                 {pageT("assurance.eyebrow")}
               </p>
               <h2 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl">
@@ -124,11 +126,12 @@ export default async function StandardsPage({ params }: Props) {
                 <article
                   key={item.key}
                   data-section-reveal
+                  data-premium-card
                   data-reveal-from={assurance.indexOf(item) % 2 === 0 ? "left" : "right"}
                   className="border border-black/10 bg-white p-7 shadow-sm"
                 >
                   <h3 className="text-2xl font-semibold">{item.title}</h3>
-                  <p className="mt-4 text-sm leading-7 text-[#55525c]">
+                  <p className="mt-4 text-sm leading-7 text-[#546273]">
                     {item.copy}
                   </p>
                 </article>

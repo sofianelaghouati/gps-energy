@@ -1,0 +1,28 @@
+<svg role="img" aria-label="GPS Energy" viewBox="0 0 746 402" xmlns="http://www.w3.org/2000/svg">
+  <title>GPS Energy</title>
+  <rect width="746" height="402" fill="#557da5"/>
+  <g transform="translate(373 118) scale(.88)">
+    <g fill="#ffffff">
+      <rect x="-12" y="-114" width="24" height="34" rx="3"/>
+      <rect x="-12" y="-114" width="24" height="34" rx="3" transform="rotate(-42)"/>
+      <rect x="-12" y="-114" width="24" height="34" rx="3" transform="rotate(42)"/>
+      <rect x="-12" y="-114" width="24" height="34" rx="3" transform="rotate(-82)"/>
+      <rect x="-12" y="-114" width="24" height="34" rx="3" transform="rotate(82)"/>
+      <rect x="-13" y="-111" width="26" height="38" rx="3" transform="rotate(-124)"/>
+      <rect x="-13" y="-111" width="26" height="38" rx="3" transform="rotate(124)"/>
+      <path d="M-115 31a115 115 0 0 1 230 0H73a73 73 0 0 0-146 0z"/>
+      <rect x="-136" y="5" width="44" height="44" rx="5"/>
+      <rect x="92" y="5" width="44" height="44" rx="5"/>
+    </g>
+    <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-55-9 52 47" stroke-width="13"/>
+      <path d="M46 47h40" stroke-width="10"/>
+      <path d="M-75-13c11-21 29-27 45-16" stroke-width="14"/>
+      <circle cx="-56" cy="-9" r="8" fill="#ffffff" stroke="none"/>
+      <path d="M-37 99 0 30l38 69" stroke-width="8"/>
+      <path d="M-20 68h40M-10 48l20 51M10 48l-20 51" stroke-width="6"/>
+    </g>
+  </g>
+  <text x="373" y="273" fill="#ffffff" font-family="Eurostile Extended, Bahnschrift, Eurostile, Bank Gothic, Arial Black, DIN Alternate, Arial Narrow, Trebuchet MS, Segoe UI, Arial, sans-serif" font-size="62" font-weight="800" font-stretch="expanded" letter-spacing="2.5" lengthAdjust="spacingAndGlyphs" textLength="370" text-anchor="middle">GPS ENERGY</text>
+  <line x1="160" x2="586" y1="334" y2="334" stroke="#a38356" stroke-linecap="round" stroke-width="7"/>
+</svg>

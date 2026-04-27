@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
+import { CompanyProfileShowcase } from "../company-profile-showcase";
 import { HomeAnimations } from "../home-animations";
 import { JsonLd } from "../json-ld";
 import { PageHero } from "../page-hero";
@@ -70,9 +71,10 @@ export default async function CompanyPage({ params }: Props) {
       <HomeAnimations />
       <JsonLd data={pageJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
-      <main className="overflow-hidden bg-[#060608] text-white">
+      <main className="overflow-hidden bg-[#557da5] text-white">
         <SiteHeader currentPath="/company" locale={locale} page="company" />
         <PageHero
+          backgroundMedia="roughnecks"
           eyebrow={pageT("hero.eyebrow")}
           title={pageT("hero.title")}
           copy={pageT("hero.copy")}
@@ -83,29 +85,47 @@ export default async function CompanyPage({ params }: Props) {
           ]}
         />
 
-        <section className="bg-[#f4f1ec] px-5 py-18 text-[#101014] sm:px-8 lg:px-10">
+        <section className="bg-[#e7eff6] px-5 py-18 text-[#17334d] sm:px-8 lg:px-10">
           <div className="mx-auto max-w-7xl">
-            <div data-section-reveal data-reveal-from="left" className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase text-[#5b48dc]">
-                {homeT("companyBand.eyebrow")}
-              </p>
-              <h2 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl">
-                {homeT("companyBand.title")}
-              </h2>
+            <div className="grid gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
+              <div
+                data-section-reveal
+                data-reveal-from="left"
+                className="max-w-3xl"
+              >
+                <p className="text-xs font-semibold uppercase text-[#557da5]">
+                  {homeT("companyBand.eyebrow")}
+                </p>
+                <h2 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl">
+                  {homeT("companyBand.title")}
+                </h2>
+                <p className="mt-6 max-w-2xl text-base leading-7 text-[#546273] sm:text-lg">
+                  {homeT("expertise.copy")}
+                </p>
+              </div>
+              <div data-section-reveal data-reveal-from="right">
+                <CompanyProfileShowcase
+                  copy={pageT("hero.copy")}
+                  eyebrow={homeT("companyBand.eyebrow")}
+                  metrics={companyItems}
+                  title={pageT("hero.title")}
+                />
+              </div>
             </div>
             <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
               {companyItems.map((item, index) => (
                 <article
                   key={item.key}
                   data-section-reveal
+                  data-premium-card
                   data-reveal-from={index % 2 === 0 ? "left" : "right"}
                   className="border border-black/10 bg-white p-6 shadow-sm"
                 >
-                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#5b48dc]">
+                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#557da5]">
                     {item.label}
                   </p>
                   <h3 className="mt-5 text-3xl font-semibold">{item.value}</h3>
-                  <p className="mt-4 text-sm leading-6 text-[#55525c]">
+                  <p className="mt-4 text-sm leading-6 text-[#546273]">
                     {item.copy}
                   </p>
                 </article>
@@ -114,10 +134,10 @@ export default async function CompanyPage({ params }: Props) {
           </div>
         </section>
 
-        <section className="bg-white px-5 py-18 text-[#101014] sm:px-8 lg:px-10">
+        <section className="bg-white px-5 py-18 text-[#17334d] sm:px-8 lg:px-10">
           <div className="mx-auto max-w-7xl">
             <div data-section-reveal data-reveal-from="left" className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase text-[#ff7908]">
+              <p className="text-xs font-semibold uppercase text-[#a38356]">
                 {pageT("model.eyebrow")}
               </p>
               <h2 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl">
@@ -129,11 +149,12 @@ export default async function CompanyPage({ params }: Props) {
                 <article
                   key={item.key}
                   data-section-reveal
+                  data-premium-card
                   data-reveal-from={index % 2 === 0 ? "left" : "right"}
-                  className="border border-black/10 bg-[#f8f4ee] p-7 shadow-sm"
+                  className="border border-black/10 bg-[#f3f7fb] p-7 shadow-sm"
                 >
                   <h3 className="text-2xl font-semibold">{item.title}</h3>
-                  <p className="mt-4 text-sm leading-7 text-[#55525c]">
+                  <p className="mt-4 text-sm leading-7 text-[#546273]">
                     {item.copy}
                   </p>
                 </article>
@@ -142,10 +163,10 @@ export default async function CompanyPage({ params }: Props) {
           </div>
         </section>
 
-        <section className="border-y border-white/10 bg-[#0a0b10] px-5 py-18 text-white sm:px-8 lg:px-10">
+        <section className="border-y border-white/10 bg-[#365f84] px-5 py-18 text-white sm:px-8 lg:px-10">
           <div className="mx-auto max-w-7xl">
             <div data-section-reveal data-reveal-from="left" className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase text-[#ff7908]">
+              <p className="text-xs font-semibold uppercase text-[#a38356]">
                 {pageT("reasons.eyebrow")}
               </p>
               <h2 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl">
@@ -157,6 +178,7 @@ export default async function CompanyPage({ params }: Props) {
                 <article
                   key={item.key}
                   data-section-reveal
+                  data-premium-card
                   data-reveal-from={index % 2 === 0 ? "left" : "right"}
                   className="border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm"
                 >

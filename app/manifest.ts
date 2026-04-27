@@ -8,7 +8,7 @@ export default function manifest(): MetadataRoute.Manifest {
       "Integrated oil and gas field services focused on Jet Pump, wellhead maintenance, logistics and production support.",
     start_url: "/en",
     display: "standalone",
-    background_color: "#060608",
-    theme_color: "#060608",
+    background_color: "#557da5",
+    theme_color: "#557da5",
   };
 }

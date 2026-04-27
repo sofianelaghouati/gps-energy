@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Inter_Tight } from "next/font/google";
 import { hasLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -11,6 +12,12 @@ import {
   siteConfig,
 } from "./seo";
 import "../globals.css";
+
+const gpsSans = Inter_Tight({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-gps-sans",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -49,7 +56,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#060608",
+  themeColor: "#557da5",
 };
 
 export const dynamic = "error";
@@ -80,9 +87,9 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html
       lang={locale}
       data-scroll-behavior="smooth"
-      className="h-full scroll-smooth antialiased"
+      className={`${gpsSans.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="min-h-full bg-[#060608] text-white">
+      <body className="min-h-full bg-[#557da5] text-white">
         <JsonLd data={organizationJsonLd} />
         <JsonLd data={websiteJsonLd} />
         {children}

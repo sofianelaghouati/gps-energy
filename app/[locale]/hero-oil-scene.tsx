@@ -16,8 +16,8 @@ function createGlowTexture() {
 
   const gradient = context.createRadialGradient(48, 48, 0, 48, 48, 48);
   gradient.addColorStop(0, "rgba(255, 255, 255, 1)");
-  gradient.addColorStop(0.25, "rgba(255, 122, 8, 0.9)");
-  gradient.addColorStop(0.62, "rgba(91, 72, 220, 0.32)");
+  gradient.addColorStop(0.25, "rgba(163, 131, 86, 0.9)");
+  gradient.addColorStop(0.62, "rgba(85, 125, 165, 0.32)");
   gradient.addColorStop(1, "rgba(0, 0, 0, 0)");
 
   context.fillStyle = gradient;
@@ -96,7 +96,7 @@ function createCircularGrid() {
     depthWrite: false,
   });
   const accentMaterial = new THREE.LineBasicMaterial({
-    color: 0xff7908,
+    color: 0xa38356,
     transparent: true,
     opacity: 0.22,
     blending: THREE.AdditiveBlending,
@@ -171,7 +171,7 @@ export function HeroOilScene() {
     const sparkCount = isCompactViewport ? 180 : 280;
     const dropletCount = isCompactViewport ? 20 : 28;
     const scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2(0x060608, 0.046);
+    scene.fog = new THREE.FogExp2(0x244766, 0.046);
 
     const camera = new THREE.PerspectiveCamera(43, 1, 0.1, 120);
     const renderer = new THREE.WebGLRenderer({
@@ -199,22 +199,22 @@ export function HeroOilScene() {
     model.add(gridGroup, rig, wellhead, helixGroup, ringGroup, depthScale);
 
     const steel = new THREE.MeshPhysicalMaterial({
-      color: 0x9ca3af,
+      color: 0x9fb2c4,
       roughness: 0.26,
       metalness: 0.88,
       clearcoat: 0.55,
       clearcoatRoughness: 0.18,
     });
     const darkSteel = new THREE.MeshPhysicalMaterial({
-      color: 0x11131a,
+      color: 0x17334d,
       roughness: 0.36,
       metalness: 0.78,
       clearcoat: 0.35,
       clearcoatRoughness: 0.22,
     });
     const violet = new THREE.MeshPhysicalMaterial({
-      color: 0x5b48dc,
-      emissive: 0x24156f,
+      color: 0x557da5,
+      emissive: 0x1d3d5f,
       emissiveIntensity: 0.7,
       roughness: 0.28,
       metalness: 0.68,
@@ -223,7 +223,7 @@ export function HeroOilScene() {
     });
     const oil = new THREE.MeshPhysicalMaterial({
       color: 0x090705,
-      emissive: 0x3b1500,
+      emissive: 0x2b241c,
       emissiveIntensity: 0.8,
       roughness: 0.18,
       metalness: 0.42,
@@ -231,7 +231,7 @@ export function HeroOilScene() {
       clearcoatRoughness: 0.08,
     });
     const glass = new THREE.MeshPhysicalMaterial({
-      color: 0x9ca3ff,
+      color: 0x9fb2c4,
       roughness: 0.08,
       metalness: 0,
       transparent: true,
@@ -243,14 +243,14 @@ export function HeroOilScene() {
       depthWrite: false,
     });
     const orangeGlow = new THREE.MeshBasicMaterial({
-      color: 0xff7908,
+      color: 0xa38356,
       transparent: true,
       opacity: 0.9,
       blending: THREE.AdditiveBlending,
       depthWrite: false,
     });
     const violetGlow = new THREE.MeshBasicMaterial({
-      color: 0x5b48dc,
+      color: 0x557da5,
       transparent: true,
       opacity: 0.36,
       blending: THREE.AdditiveBlending,
@@ -259,11 +259,11 @@ export function HeroOilScene() {
 
     scene.add(new THREE.AmbientLight(0x7a84a0, 0.34));
 
-    const orangeLight = new THREE.PointLight(0xff7908, 66, 13);
+    const orangeLight = new THREE.PointLight(0xa38356, 66, 13);
     orangeLight.position.set(1.2, 1.2, 2.3);
     scene.add(orangeLight);
 
-    const purpleLight = new THREE.PointLight(0x5b48dc, 48, 14);
+    const purpleLight = new THREE.PointLight(0x557da5, 48, 14);
     purpleLight.position.set(-2.6, 2.4, -2.2);
     scene.add(purpleLight);
 
@@ -271,7 +271,7 @@ export function HeroOilScene() {
     keyLight.position.set(3, 4, 5);
     scene.add(keyLight);
 
-    const rimLight = new THREE.DirectionalLight(0xffe4bf, 1.45);
+    const rimLight = new THREE.DirectionalLight(0xe6d7c0, 1.45);
     rimLight.position.set(-4, 2.4, -3);
     scene.add(rimLight);
 
@@ -444,7 +444,7 @@ export function HeroOilScene() {
       depthWrite: false,
     });
     const accentScaleMaterial = new THREE.LineBasicMaterial({
-      color: 0xff7908,
+      color: 0xa38356,
       transparent: true,
       opacity: 0.38,
       blending: THREE.AdditiveBlending,
@@ -528,7 +528,7 @@ export function HeroOilScene() {
     const sparks = new THREE.Points(
       sparkGeometry,
       new THREE.PointsMaterial({
-        color: 0xff8a17,
+        color: 0xb99666,
         map: glowTexture ?? undefined,
         transparent: true,
         opacity: 0.82,
@@ -749,7 +749,7 @@ export function HeroOilScene() {
       ref={rootRef}
       data-hero-media
       aria-hidden="true"
-      className="absolute inset-0 overflow-hidden bg-[#060608]"
+      className="absolute inset-0 overflow-hidden"
     />
   );
 }
