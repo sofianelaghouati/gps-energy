@@ -1,0 +1,334 @@
+{
+  "Metadata": {
+    "title": "Innovation Oil & Gas",
+    "description": "GPS Energy est une société algérienne oil & gas spécialisée dans les services terrain intégrés, le Jet Pump, la maintenance wellhead, la logistique et le support production.",
+    "ogImageAlt": "Opération terrain oil and gas sur un équipement wellhead"
+  },
+  "HomePage": {
+    "brand": {
+      "homeAria": "Retour au début de la page GPS Energy"
+    },
+    "nav": {
+      "aria": "Navigation principale",
+      "expertise": "Société",
+      "services": "Services",
+      "safety": "Standards",
+      "contact": "Contact",
+      "cta": "Nous contacter",
+      "language": "Choix de langue",
+      "mobile": "Ouvrir le menu"
+    },
+    "hero": {
+      "imageAlt": "Techniciens oil and gas travaillant sur un équipement wellhead",
+      "credit": "Image : Ken Doerr / CC BY 2.0",
+      "eyebrow": "Driving Innovation in O&G",
+      "title": "Services terrain intégrés pour opérations critiques.",
+      "copy": "GPS Energy fournit des services terrain oil & gas spécialisés en Algérie, avec une expertise forte en Jet Pump, maintenance wellhead, logistique et support production surface.",
+      "primaryCta": "Discuter d'un projet",
+      "secondaryCta": "Explorer les services",
+      "sideCopy": "Fondée en 2021, GPS Energy associe exécution terrain, fiabilité opérationnelle et culture sécurité pour soutenir la continuité de production des opérateurs nationaux et internationaux.",
+      "stats": {
+        "founded": {
+          "value": "2021",
+          "label": "Fondée"
+        },
+        "iso": {
+          "value": "ISO",
+          "label": "Certifiée"
+        },
+        "market": {
+          "value": "DZ",
+          "label": "Algérie"
+        }
+      }
+    },
+    "expertise": {
+      "eyebrow": "Profil société",
+      "title": "Un partenaire algérien oil & gas conçu pour l'exécution terrain précise.",
+      "copy": "GPS Energy est une société algérienne privée fournissant des services spécialisés et intégrés à l'industrie oil & gas. Son approche repose sur la qualité, la sécurité et la fiabilité opérationnelle, avec un support adapté aux opérations pétrolières, aux équipements de production et à l'intégrité des puits."
+    },
+    "companyBand": {
+      "eyebrow": "Profil opérationnel",
+      "title": "Une organisation pensée pour le support terrain, la continuité de production et la discipline technique.",
+      "items": {
+        "founded": {
+          "label": "Fondée",
+          "value": "2021",
+          "copy": "Une société jeune avec un modèle opérationnel ciblé et une exécution terrain réactive."
+        },
+        "structure": {
+          "label": "Structure",
+          "value": "Société privée",
+          "copy": "Une direction indépendante avec une coordination étroite entre technique, logistique et terrain."
+        },
+        "people": {
+          "label": "Équipe",
+          "value": "11-50 employés",
+          "copy": "Des équipes compactes dimensionnées pour des opérations oil & gas spécialisées et réactives."
+        },
+        "market": {
+          "label": "Couverture",
+          "value": "Algérie",
+          "copy": "Positionnée pour les opérateurs, contractants et actifs de production du marché algérien."
+        }
+      }
+    },
+    "services": {
+      "aria": "Services principaux de GPS Energy",
+      "lift": {
+        "title": "Jet Pump Artificial Lift",
+        "copy": "Installation et opération de systèmes Jet Pump pour l'amélioration de production, les puits à basse pression, les environnements sableux ou difficiles et le contrôle du niveau de fluide.",
+        "benefit": "Valeur terrain : fonctionnement continu, complexité mécanique downhole réduite et meilleure efficacité de production."
+      },
+      "welltest": {
+        "title": "Welltest & Slickline",
+        "copy": "Développement des capacités welltest et slickline pour le servicing intégré, incluant séparateur de test, surge tank, pompe, laboratoire, instrumentation et acquisition de données.",
+        "benefit": "Valeur terrain : mesure fiable, meilleur contrôle d'intervention et couverture servicing renforcée."
+      },
+      "wellhead": {
+        "title": "Wellhead Maintenance",
+        "copy": "Maintenance wellhead, remplacement de composants, graissage de vannes, tests d'intégrité et servicing des équipements de production surface.",
+        "benefit": "Valeur terrain : actifs plus sûrs, intégrité des puits protégée et risque d'arrêt réduit."
+      }
+    },
+    "capabilities": {
+      "eyebrow": "Support intégré",
+      "title": "Un périmètre opérationnel plus large que ce qu'une simple carte service peut montrer.",
+      "intro": "Au-delà des trois lignes de service principales, GPS Energy se positionne comme un partenaire terrain pour les équipements, la logistique, le support production et la préparation aux interventions.",
+      "items": {
+        "equipment": {
+          "title": "Location d'équipements industriels lourds",
+          "copy": "Support opérationnel grâce à la disponibilité d'équipements spécialisés pour les besoins terrain et production."
+        },
+        "logistics": {
+          "title": "Logistique pétrolière",
+          "copy": "Transport et support logistique alignés sur les contraintes d'exploitation oil & gas et les délais de déploiement."
+        },
+        "production": {
+          "title": "Support production surface",
+          "copy": "Support d'opération et de servicing pour les systèmes de production surface et équipements terrain associés."
+        },
+        "replacement": {
+          "title": "Remplacement de composants wellhead",
+          "copy": "Exécution maintenance orientée intégrité, disponibilité et conditions terrain sécurisées."
+        },
+        "testing": {
+          "title": "Préparation des packages de test",
+          "copy": "Logique de support autour des séparateurs, surge tanks, pompes, fonctions labo et couverture instrumentation."
+        },
+        "intervention": {
+          "title": "Préparation d'intervention",
+          "copy": "Préparation structurée des opérations critiques de servicing, mesure et continuité de production."
+        }
+      }
+    },
+    "jetPump": {
+      "eyebrow": "Innovation Jet Pump",
+      "title": "Le Jet Pump artificial lift présenté comme une réponse concrète aux conditions de puits difficiles.",
+      "copy": "GPS Energy présente le Jet Pump comme une technologie d'artificial lift adaptée aux puits à basse pression, aux environnements sableux, aux conditions instables et aux cas de production bénéficiant de systèmes robustes pilotés en surface.",
+      "partnershipTitle": "Logique de déploiement stratégique",
+      "partnershipCopy": "La société communique le développement du Jet Pump en Algérie avec Sonatrach, en le positionnant à la fois comme une capacité technique et comme un jalon de marché local pour les opérations d'artificial lift.",
+      "points": {
+        "lowPressure": "Puits à basse pression",
+        "sandy": "Puits sableux ou chargés en solides",
+        "unstable": "Conditions d'exploitation instables",
+        "surfaceDriven": "Maintenance pilotée en surface"
+      }
+    },
+    "safety": {
+      "eyebrow": "Qualité, HSE, environnement",
+      "title": "Des standards certifiés ISO pour la qualité, la sécurité et la responsabilité environnementale.",
+      "copy": "GPS Energy communique les certifications ISO 9001:2015, ISO 45001:2018 et ISO 14001:2015, reflet d'un engagement envers la qualité de service, la sécurité des équipes et des pratiques opérationnelles durables."
+    },
+    "standardsGrid": {
+      "items": {
+        "quality": {
+          "title": "ISO 9001:2015",
+          "copy": "Une discipline de management de la qualité pour une exécution cohérente et maîtrisée."
+        },
+        "safety": {
+          "title": "ISO 45001:2018",
+          "copy": "Un focus santé et sécurité au travail intégré à la préparation et aux opérations terrain."
+        },
+        "environment": {
+          "title": "ISO 14001:2015",
+          "copy": "Une responsabilité environnementale alignée avec des pratiques site et exploitation plus rigoureuses."
+        }
+      }
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Échanger sur une opération, un besoin équipement ou une intervention technique.",
+      "email": "logistic_services@gps-energy.com"
+    },
+    "footer": {
+      "summary": "Services terrain oil & gas spécialisés et intégrés en Algérie.",
+      "companyTitle": "Société",
+      "companyItems": {
+        "private": "Société privée",
+        "founded": "Fondée en 2021",
+        "market": "Focalisée sur l'Algérie"
+      },
+      "linksTitle": "Explorer",
+      "contactTitle": "Nous joindre",
+      "emailLabel": "Contact opérationnel",
+      "linkedinLabel": "Profil LinkedIn",
+      "linkedinValue": "GPS ENERGY",
+      "copyright": "GPS Energy. Services techniques terrain oil & gas."
+    }
+  },
+  "Pages": {
+    "company": {
+      "metaTitle": "Societe",
+      "metaDescription": "GPS Energy est une societe algerienne de services oil & gas orientee Jet Pump, maintenance wellhead, logistique et support production.",
+      "hero": {
+        "eyebrow": "Societe",
+        "title": "Construite en Algerie pour une execution terrain rigoureuse.",
+        "copy": "GPS Energy opere comme une societe privee de support oil & gas pensee pour la reactivite, la coordination technique et la continuite de production.",
+        "highlights": {
+          "founded": "Fondee en 2021",
+          "people": "11-50 employes",
+          "coverage": "Support terrain en Algerie"
+        }
+      },
+      "model": {
+        "eyebrow": "Modele operationnel",
+        "title": "Comment GPS Energy s'organise pour le terrain.",
+        "items": {
+          "technical": {
+            "title": "Reponse technique",
+            "copy": "L'execution est organisee autour des besoins d'intervention, du support production et des priorites d'integrite des puits."
+          },
+          "coordination": {
+            "title": "Coordination transversale",
+            "copy": "Terrain, logistique et disponibilite des equipements sont presentes comme les parties d'un meme flux operationnel."
+          },
+          "continuity": {
+            "title": "Continuite de production",
+            "copy": "La societe positionne son support autour de la reduction des perturbations, du maintien de l'uptime et de la readiness service."
+          },
+          "market": {
+            "title": "Focus marche local",
+            "copy": "GPS Energy communique une empreinte algerienne concrete pour les operateurs, contractants et actifs de production."
+          }
+        }
+      },
+      "reasons": {
+        "eyebrow": "Pourquoi GPS Energy",
+        "title": "Une structure plus compacte avec une proposition de valeur terrain claire.",
+        "items": {
+          "fit": {
+            "title": "Perimetre specialise",
+            "copy": "Des lignes de service ciblees permettent a la societe d'exprimer clairement ou elle cree de la valeur."
+          },
+          "speed": {
+            "title": "Support reactif",
+            "copy": "Des equipes lean et une logique logistique integree donnent l'image d'une structure faite pour la reponse operationnelle."
+          },
+          "discipline": {
+            "title": "Execution guidee par les standards",
+            "copy": "Les systemes ISO qualite, securite et environnement renforcent un profil plus rigoureux et credible."
+          }
+        }
+      }
+    },
+    "services": {
+      "metaTitle": "Services",
+      "metaDescription": "Decouvrez les services GPS Energy : Jet Pump artificial lift, Welltest & Slickline, Wellhead Maintenance, logistique et support production.",
+      "hero": {
+        "eyebrow": "Services",
+        "title": "Des services specialises alignes avec la production, l'integrite et les besoins d'intervention.",
+        "copy": "GPS Energy presente un portefeuille cible construit autour de l'artificial lift, du servicing wellsite, de l'integrite wellhead, de la logistique et du support production.",
+        "highlights": {
+          "lift": "Jet Pump artificial lift",
+          "wellsite": "Support Welltest et Slickline",
+          "maintenance": "Perimetre maintenance wellhead"
+        }
+      },
+      "core": {
+        "eyebrow": "Services principaux",
+        "title": "Trois lignes phares definissent le coeur de l'offre."
+      },
+      "support": {
+        "eyebrow": "Support complementaire",
+        "title": "Un support operationnel autour des services principaux.",
+        "copy": "L'offre plus large va au-dela de l'intervention unitaire et suggere une readiness sur les equipements, la logistique et le support production."
+      },
+      "focus": {
+        "eyebrow": "Focus Jet Pump",
+        "title": "L'artificial lift presente comme une reponse concrete aux conditions de puits difficiles.",
+        "copy": "Le Jet Pump est positionne comme une solution adaptee aux puits a basse pression, aux environnements sableux, aux conditions instables et a une logique de maintenance en surface."
+      }
+    },
+    "standards": {
+      "metaTitle": "Standards",
+      "metaDescription": "GPS Energy communique les certifications ISO 9001, ISO 45001 et ISO 14001 comme partie de son cadre qualite, HSE et environnement.",
+      "hero": {
+        "eyebrow": "Standards",
+        "title": "Une discipline operationnelle soutenue par des systemes de management certifies.",
+        "copy": "La qualite, le HSE et la responsabilite environnementale sont presentes comme une partie de la promesse de service.",
+        "highlights": {
+          "quality": "ISO 9001:2015",
+          "safety": "ISO 45001:2018",
+          "environment": "ISO 14001:2015"
+        }
+      },
+      "assurance": {
+        "eyebrow": "Assurance operationnelle",
+        "title": "Ce que ces standards disent de l'execution terrain.",
+        "items": {
+          "quality": {
+            "title": "Execution coherente",
+            "copy": "Les systemes qualite soutiennent la repetabilite, les controles documentes et une meilleure discipline de service."
+          },
+          "safety": {
+            "title": "Protection des equipes",
+            "copy": "Les pratiques sante et securite sont positionnees comme centrales dans la preparation, la mobilisation et l'intervention."
+          },
+          "environment": {
+            "title": "Operations responsables",
+            "copy": "Les systemes environnement aident a cadrer le comportement site, la gestion des equipements et des habitudes plus durables."
+          }
+        }
+      }
+    },
+    "contact": {
+      "metaTitle": "Contact",
+      "metaDescription": "Contactez GPS Energy pour echanger sur le Jet Pump, la maintenance wellhead, le support wellsite ou les besoins logistiques en Algerie.",
+      "hero": {
+        "eyebrow": "Contact",
+        "title": "Ouvrez une conversation directe avec l'equipe support terrain.",
+        "copy": "Cette page permet de lancer un echange sur le perimetre de service, le support operationnel, les besoins equipement ou la preparation d'intervention.",
+        "highlights": {
+          "email": "Contact operationnel par email",
+          "coverage": "Couverture du marche algerien",
+          "services": "Support sur plusieurs lignes de service"
+        }
+      },
+      "cards": {
+        "email": {
+          "title": "Email operationnel",
+          "copy": "Pour une prise de contact technique ou commerciale directe."
+        },
+        "coverage": {
+          "title": "Couverture",
+          "copy": "Support oriente Algerie pour operateurs et contractants."
+        },
+        "linkedin": {
+          "title": "Profil societe",
+          "copy": "Restez connecte via la page LinkedIn GPS Energy."
+        }
+      },
+      "topics": {
+        "eyebrow": "Sujets d'echange",
+        "title": "Conversations que cette page doit pouvoir accueillir.",
+        "items": {
+          "jetPump": "Deploiement Jet Pump artificial lift",
+          "wellhead": "Planification maintenance wellhead",
+          "welltest": "Besoins Welltest et Slickline",
+          "logistics": "Logistique et support production surface"
+        }
+      }
+    }
+  }
+}

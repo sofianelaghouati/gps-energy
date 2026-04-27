@@ -1,0 +1,334 @@
+{
+  "Metadata": {
+    "title": "Driving Innovation in O&G",
+    "description": "GPS Energy is an Algerian oil and gas company delivering integrated field services, Jet Pump artificial lift, wellhead maintenance, logistics and surface production support.",
+    "ogImageAlt": "Oil and gas field operation on wellhead equipment"
+  },
+  "HomePage": {
+    "brand": {
+      "homeAria": "Back to the top of the GPS Energy page"
+    },
+    "nav": {
+      "aria": "Main navigation",
+      "expertise": "Company",
+      "services": "Services",
+      "safety": "Standards",
+      "contact": "Contact",
+      "cta": "Contact us",
+      "language": "Language selector",
+      "mobile": "Open menu"
+    },
+    "hero": {
+      "imageAlt": "Oil and gas technicians working on wellhead equipment",
+      "credit": "Image: Ken Doerr / CC BY 2.0",
+      "eyebrow": "Driving Innovation in O&G",
+      "title": "Integrated field services for critical operations.",
+      "copy": "GPS Energy provides specialized oil and gas field services across Algeria, with strong expertise in Jet Pump artificial lift, wellhead maintenance, logistics and surface production support.",
+      "primaryCta": "Discuss a project",
+      "secondaryCta": "Explore services",
+      "sideCopy": "Founded in 2021, GPS Energy combines field execution, operational reliability and a safety-first culture to support production continuity for national and international operators.",
+      "stats": {
+        "founded": {
+          "value": "2021",
+          "label": "Founded"
+        },
+        "iso": {
+          "value": "ISO",
+          "label": "Certified"
+        },
+        "market": {
+          "value": "DZ",
+          "label": "Algeria"
+        }
+      }
+    },
+    "expertise": {
+      "eyebrow": "Company profile",
+      "title": "An Algerian oil and gas partner built for precise field execution.",
+      "copy": "GPS Energy is a privately held Algerian company providing specialized and integrated services to the oil and gas industry. Its work is driven by quality, safety and operational reliability, with tailored support for petroleum operations, production equipment and well integrity."
+    },
+    "companyBand": {
+      "eyebrow": "Operating profile",
+      "title": "Built around field support, production continuity and technical discipline.",
+      "items": {
+        "founded": {
+          "label": "Founded",
+          "value": "2021",
+          "copy": "A young company with a focused operating model and fast-moving field execution."
+        },
+        "structure": {
+          "label": "Structure",
+          "value": "Privately held",
+          "copy": "Independent direction with close coordination between technical, logistics and field teams."
+        },
+        "people": {
+          "label": "Team",
+          "value": "11-50 employees",
+          "copy": "Lean teams sized for responsive support on specialized oil and gas operations."
+        },
+        "market": {
+          "label": "Coverage",
+          "value": "Algeria",
+          "copy": "Positioned for operators, contractors and production assets across the Algerian market."
+        }
+      }
+    },
+    "services": {
+      "aria": "GPS Energy core services",
+      "lift": {
+        "title": "Jet Pump Artificial Lift",
+        "copy": "Installation and operation of Jet Pump systems for production enhancement, low-pressure wells, sandy or harsh conditions and fluid level control.",
+        "benefit": "Field value: continuous operation, reduced downhole mechanical complexity and stronger production efficiency."
+      },
+      "welltest": {
+        "title": "Welltest & Slickline",
+        "copy": "Welltest and slickline capability development for integrated servicing, including test separator, surge tank, pump, lab, instrumentation and data acquisition requirements.",
+        "benefit": "Field value: reliable measurement, better intervention control and stronger servicing coverage."
+      },
+      "wellhead": {
+        "title": "Wellhead Maintenance",
+        "copy": "Wellhead maintenance, component replacement, valve greasing, integrity testing and surface production equipment servicing.",
+        "benefit": "Field value: safer assets, protected well integrity and reduced shutdown risk."
+      }
+    },
+    "capabilities": {
+      "eyebrow": "Integrated support",
+      "title": "A broader operating scope than a standard service card can show.",
+      "intro": "Beyond the three flagship service lines, GPS Energy positions itself as a practical field partner for equipment, logistics, production support and intervention readiness.",
+      "items": {
+        "equipment": {
+          "title": "Heavy industrial equipment rental",
+          "copy": "Operational support through specialized equipment availability for field and production requirements."
+        },
+        "logistics": {
+          "title": "Petroleum logistics",
+          "copy": "Transport and logistical support aligned with oil and gas operating constraints and deployment timing."
+        },
+        "production": {
+          "title": "Surface production support",
+          "copy": "Operation and servicing support for surface production systems and related field equipment."
+        },
+        "replacement": {
+          "title": "Wellhead component replacement",
+          "copy": "Practical maintenance execution focused on integrity, uptime and secure field conditions."
+        },
+        "testing": {
+          "title": "Test package readiness",
+          "copy": "Support logic around separators, surge tanks, pumps, lab functions and instrumentation coverage."
+        },
+        "intervention": {
+          "title": "Intervention planning",
+          "copy": "Structured preparation for critical servicing, measurement and production continuity work."
+        }
+      }
+    },
+    "jetPump": {
+      "eyebrow": "Jet Pump innovation",
+      "title": "Jet Pump artificial lift introduced as a practical response to harsh well conditions.",
+      "copy": "GPS Energy presents Jet Pump as a strong-fit artificial lift technology for low-pressure wells, sandy environments, unstable conditions and production cases that benefit from robust surface-driven systems.",
+      "partnershipTitle": "Strategic deployment logic",
+      "partnershipCopy": "The company communicates Jet Pump development in Algeria with Sonatrach, framing it as both a technical capability and a local market milestone for artificial lift operations.",
+      "points": {
+        "lowPressure": "Low-pressure wells",
+        "sandy": "Sandy or solids-heavy wells",
+        "unstable": "Unstable operating conditions",
+        "surfaceDriven": "Surface-driven maintenance logic"
+      }
+    },
+    "safety": {
+      "eyebrow": "Quality, HSE, environment",
+      "title": "ISO-certified standards for quality, safety and environmental responsibility.",
+      "copy": "GPS Energy communicates ISO 9001:2015, ISO 45001:2018 and ISO 14001:2015 certifications, reflecting a commitment to consistent service quality, worker safety and sustainable operating practices."
+    },
+    "standardsGrid": {
+      "items": {
+        "quality": {
+          "title": "ISO 9001:2015",
+          "copy": "Quality management discipline for consistent delivery and controlled execution."
+        },
+        "safety": {
+          "title": "ISO 45001:2018",
+          "copy": "Occupational health and safety focus embedded into planning and field operations."
+        },
+        "environment": {
+          "title": "ISO 14001:2015",
+          "copy": "Environmental responsibility aligned with responsible site practices and operating standards."
+        }
+      }
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "title": "Discuss an operation, equipment need or technical intervention.",
+      "email": "logistic_services@gps-energy.com"
+    },
+    "footer": {
+      "summary": "Specialized and integrated oil and gas field services in Algeria.",
+      "companyTitle": "Company",
+      "companyItems": {
+        "private": "Privately held",
+        "founded": "Founded in 2021",
+        "market": "Focused on Algeria"
+      },
+      "linksTitle": "Explore",
+      "contactTitle": "Reach us",
+      "emailLabel": "Operational contact",
+      "linkedinLabel": "LinkedIn profile",
+      "linkedinValue": "GPS ENERGY",
+      "copyright": "GPS Energy. Technical oil and gas field services."
+    }
+  },
+  "Pages": {
+    "company": {
+      "metaTitle": "Company",
+      "metaDescription": "GPS Energy is an Algerian oil and gas field services company focused on Jet Pump artificial lift, wellhead maintenance, logistics and production support.",
+      "hero": {
+        "eyebrow": "Company",
+        "title": "Built in Algeria for disciplined field execution.",
+        "copy": "GPS Energy operates as a privately held oil and gas support company designed around responsiveness, technical coordination and production continuity.",
+        "highlights": {
+          "founded": "Founded in 2021",
+          "people": "11-50 employees",
+          "coverage": "Field support across Algeria"
+        }
+      },
+      "model": {
+        "eyebrow": "Operating model",
+        "title": "How GPS Energy is structured for the field.",
+        "items": {
+          "technical": {
+            "title": "Technical response",
+            "copy": "Execution is organized around intervention needs, production support requirements and well integrity priorities."
+          },
+          "coordination": {
+            "title": "Cross-functional coordination",
+            "copy": "Field work, logistics and equipment readiness are presented as connected parts of one operating workflow."
+          },
+          "continuity": {
+            "title": "Production continuity",
+            "copy": "The company positions its support around reducing disruption, maintaining uptime and improving service readiness."
+          },
+          "market": {
+            "title": "Local market focus",
+            "copy": "GPS Energy communicates a practical Algerian footprint aimed at operators, contractors and production assets."
+          }
+        }
+      },
+      "reasons": {
+        "eyebrow": "Why GPS Energy",
+        "title": "A smaller operating structure with a clear field value proposition.",
+        "items": {
+          "fit": {
+            "title": "Specialized scope",
+            "copy": "Focused service lines let the company speak clearly about where it creates value in oil and gas operations."
+          },
+          "speed": {
+            "title": "Responsive support",
+            "copy": "Lean teams and integrated logistics language create the impression of a business built for direct operational response."
+          },
+          "discipline": {
+            "title": "Standards-led execution",
+            "copy": "ISO quality, safety and environmental systems reinforce a more disciplined and credible operating profile."
+          }
+        }
+      }
+    },
+    "services": {
+      "metaTitle": "Services",
+      "metaDescription": "Explore GPS Energy service lines including Jet Pump artificial lift, Welltest and Slickline, Wellhead Maintenance, logistics and production support.",
+      "hero": {
+        "eyebrow": "Services",
+        "title": "Specialized services aligned with production, integrity and intervention needs.",
+        "copy": "GPS Energy presents a focused service portfolio built around artificial lift, wellsite servicing, wellhead integrity, logistics and production support.",
+        "highlights": {
+          "lift": "Jet Pump artificial lift",
+          "wellsite": "Welltest and slickline support",
+          "maintenance": "Wellhead maintenance scope"
+        }
+      },
+      "core": {
+        "eyebrow": "Core services",
+        "title": "Three flagship service lines define the front edge of the offer."
+      },
+      "support": {
+        "eyebrow": "Complementary support",
+        "title": "Operational support around the core service lines.",
+        "copy": "The broader offer expands beyond single interventions and points toward readiness across equipment, logistics and production support."
+      },
+      "focus": {
+        "eyebrow": "Jet Pump focus",
+        "title": "Artificial lift presented as a practical answer to difficult well conditions.",
+        "copy": "Jet Pump is positioned as a strong-fit solution for low-pressure wells, sandy environments, unstable operating conditions and surface-driven maintenance logic."
+      }
+    },
+    "standards": {
+      "metaTitle": "Standards",
+      "metaDescription": "GPS Energy communicates ISO 9001, ISO 45001 and ISO 14001 certifications as part of its quality, HSE and environmental framework.",
+      "hero": {
+        "eyebrow": "Standards",
+        "title": "Operational discipline backed by certified management systems.",
+        "copy": "Quality, HSE and environmental responsibility are framed as part of the service promise, not just supporting language around it.",
+        "highlights": {
+          "quality": "ISO 9001:2015",
+          "safety": "ISO 45001:2018",
+          "environment": "ISO 14001:2015"
+        }
+      },
+      "assurance": {
+        "eyebrow": "Operational assurance",
+        "title": "What these standards say about field delivery.",
+        "items": {
+          "quality": {
+            "title": "Consistent execution",
+            "copy": "Quality systems support repeatability, documented controls and stronger service discipline."
+          },
+          "safety": {
+            "title": "Worker protection",
+            "copy": "Health and safety practices are positioned as a core part of planning, mobilization and intervention work."
+          },
+          "environment": {
+            "title": "Responsible operations",
+            "copy": "Environmental systems help frame site behavior, equipment handling and sustainable operational habits."
+          }
+        }
+      }
+    },
+    "contact": {
+      "metaTitle": "Contact",
+      "metaDescription": "Contact GPS Energy to discuss Jet Pump deployment, wellhead maintenance, wellsite support or logistics requirements in Algeria.",
+      "hero": {
+        "eyebrow": "Contact",
+        "title": "Open a direct conversation with the field support team.",
+        "copy": "Use the contact page to start a discussion around service scope, operational support, equipment needs or technical intervention planning.",
+        "highlights": {
+          "email": "Operational contact by email",
+          "coverage": "Algerian market coverage",
+          "services": "Support across multiple service lines"
+        }
+      },
+      "cards": {
+        "email": {
+          "title": "Operational email",
+          "copy": "For direct technical or commercial outreach."
+        },
+        "coverage": {
+          "title": "Coverage",
+          "copy": "Support focus across Algeria for operators and contractors."
+        },
+        "linkedin": {
+          "title": "Company profile",
+          "copy": "Stay connected through the GPS Energy LinkedIn page."
+        }
+      },
+      "topics": {
+        "eyebrow": "Discussion topics",
+        "title": "Typical conversations this page should support.",
+        "items": {
+          "jetPump": "Jet Pump artificial lift deployment",
+          "wellhead": "Wellhead maintenance planning",
+          "welltest": "Welltest and slickline requirements",
+          "logistics": "Logistics and surface production support"
+        }
+      }
+    }
+  }
+}
