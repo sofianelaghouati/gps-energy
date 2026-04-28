@@ -19,15 +19,15 @@ export async function SiteFooter({ locale }: Props) {
   const t = await getTranslations("HomePage");
 
   return (
-    <footer className="bg-[#0b2d59] px-5 py-14 text-white sm:px-8 lg:px-10">
-      <div className="mx-auto grid max-w-7xl gap-10 border-t border-white/10 pt-10 md:grid-cols-[1.1fr_0.8fr_0.8fr]">
-        <div data-section-reveal>
+    <footer className="bg-[#0b2d59] px-5 py-12 text-white sm:px-8 lg:px-10">
+      <div className="mx-auto grid max-w-7xl gap-8 border-t border-white/10 pt-8 sm:gap-10 sm:pt-10 md:grid-cols-[1.1fr_0.8fr_0.8fr]">
+        <div data-section-reveal className="max-w-md">
           <BrandLogo
-            className="h-auto w-[228px] max-w-full drop-shadow-[0_18px_38px_rgba(7,20,41,0.28)] sm:w-[286px]"
+            className="h-auto w-[190px] max-w-[78vw] sm:w-[238px]"
             framed
             variant="full"
           />
-          <p className="mt-6 max-w-md text-sm leading-7 text-white/64">
+          <p className="mt-4 max-w-md text-sm leading-7 text-white/64 sm:mt-5">
             {t("footer.summary")}
           </p>
         </div>

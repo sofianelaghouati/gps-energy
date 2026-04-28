@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 import Link from "next/link";
 import { CompanyProfileShowcase } from "./company-profile-showcase";
 import {
@@ -208,8 +209,8 @@ export default async function Home({ params }: Props) {
           <HeroOilScene />
           <div className="premium-hero-grid" />
           <div className="premium-hero-sheen" />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(18,57,111,0.94)_0%,rgba(18,57,111,0.72)_46%,rgba(11,45,89,0.28)_100%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_76%_28%,rgba(255,107,0,0.28),transparent_24%),radial-gradient(circle_at_58%_16%,rgba(255,180,102,0.18),transparent_20%),radial-gradient(circle_at_28%_72%,rgba(248,251,255,0.12),transparent_28%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(18,57,111,0.86)_0%,rgba(18,57,111,0.54)_46%,rgba(11,45,89,0.12)_100%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_76%_28%,rgba(255,107,0,0.16),transparent_24%),radial-gradient(circle_at_58%_16%,rgba(255,180,102,0.1),transparent_20%),radial-gradient(circle_at_28%_72%,rgba(248,251,255,0.06),transparent_28%)]" />
           <SiteHeader currentPath="/" locale={locale} page="home" overlay />
           <div className="relative z-10 mx-auto flex min-h-[92svh] max-w-7xl items-end px-5 pb-12 pt-32 sm:px-8 sm:pb-16 lg:px-10">
             <div className="grid w-full gap-10 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end">
@@ -269,6 +270,36 @@ export default async function Home({ params }: Props) {
                     <span>{t("hero.secondaryCta")}</span>
                   </Link>
                 </div>
+
+                <div
+                  data-hero-reveal
+                  data-reveal-from="left"
+                  className="mt-9 grid max-w-2xl grid-cols-3 gap-2 sm:gap-3"
+                  aria-hidden="true"
+                >
+                  {[
+                    siteMedia.algeriaElMerkRig,
+                    siteMedia.oilPumpjackPermian,
+                    siteMedia.oilWellheadChristmasTree,
+                  ].map((media, index) => (
+                    <div
+                      key={media.alt}
+                      className={`relative h-20 overflow-hidden border border-white/14 bg-white/7 shadow-[0_18px_54px_rgba(0,0,0,0.28)] sm:h-28 ${
+                        index === 1 ? "translate-y-3" : ""
+                      }`}
+                    >
+                      <Image
+                        src={media.image}
+                        alt=""
+                        fill
+                        placeholder="blur"
+                        sizes="(min-width: 640px) 210px, 30vw"
+                        className="object-cover opacity-78 saturate-[1.08]"
+                      />
+                      <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(18,57,111,0.18),transparent_58%,rgba(255,107,0,0.22))]" />
+                    </div>
+                  ))}
+                </div>
               </div>
 
               <aside
@@ -321,9 +352,9 @@ export default async function Home({ params }: Props) {
           className="relative min-h-[180svh] bg-[#edf3fa] text-[#0a203d]"
         >
           <AmbientMedia
-            image={siteMedia.roughnecks.image}
-            imageAlt={siteMedia.roughnecks.alt}
-            imageClassName="object-cover object-[68%_center] opacity-12"
+            image={siteMedia.algeriaElMerkRig.image}
+            imageAlt={siteMedia.algeriaElMerkRig.alt}
+            imageClassName="object-cover object-[58%_center] opacity-14"
             overlayClassName="bg-[linear-gradient(90deg,rgba(243,247,252,0.96)_0%,rgba(243,247,252,0.84)_45%,rgba(243,247,252,0.8)_100%)]"
           />
           <div
@@ -462,6 +493,12 @@ export default async function Home({ params }: Props) {
           data-scroll-shell
           className="relative min-h-[180svh] bg-[#12396f] text-white"
         >
+          <AmbientMedia
+            image={siteMedia.algeriaElMerkRigNight.image}
+            imageAlt={siteMedia.algeriaElMerkRigNight.alt}
+            imageClassName="object-cover object-center opacity-18"
+            overlayClassName="bg-[linear-gradient(90deg,rgba(18,57,111,0.92)_0%,rgba(18,57,111,0.82)_45%,rgba(11,45,89,0.78)_100%)]"
+          />
           <div
             data-scroll-panel
             className="sticky top-0 flex min-h-svh items-center px-5 py-16 sm:px-8 lg:px-10"
@@ -503,6 +540,12 @@ export default async function Home({ params }: Props) {
           data-scroll-shell
           className="relative min-h-[180svh] bg-[#edf3fa] text-[#0a203d]"
         >
+          <AmbientMedia
+            image={siteMedia.oilPumpjackPermian.image}
+            imageAlt={siteMedia.oilPumpjackPermian.alt}
+            imageClassName="object-cover object-[66%_center] opacity-12"
+            overlayClassName="bg-[linear-gradient(90deg,rgba(237,243,250,0.96)_0%,rgba(237,243,250,0.9)_46%,rgba(237,243,250,0.86)_100%)]"
+          />
           <div
             data-scroll-panel
             className="sticky top-0 flex min-h-svh items-center px-5 py-16 sm:px-8 lg:px-10"

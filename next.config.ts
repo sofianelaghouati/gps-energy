@@ -41,6 +41,26 @@ const nextConfig: NextConfig = {
         headers: immutableAssetHeaders,
       },
       {
+        source: "/algeria-el-merk-rig-1280.jpg",
+        headers: immutableAssetHeaders,
+      },
+      {
+        source: "/algeria-el-merk-rig-night-1280.jpg",
+        headers: immutableAssetHeaders,
+      },
+      {
+        source: "/natural-gas-wellhead-1280.jpg",
+        headers: immutableAssetHeaders,
+      },
+      {
+        source: "/oil-pumpjack-permian-1280.jpg",
+        headers: immutableAssetHeaders,
+      },
+      {
+        source: "/oil-wellhead-christmas-tree-1280.jpg",
+        headers: immutableAssetHeaders,
+      },
+      {
         source: "/algeria-sahara-drone-1920.jpg",
         headers: immutableAssetHeaders,
       },

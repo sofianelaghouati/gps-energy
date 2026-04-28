@@ -32,7 +32,7 @@ export async function SiteHeader({
 
   return (
     <div className={wrapperClass}>
-      <header className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 sm:px-8 lg:px-10">
+      <header className="mx-auto flex max-w-7xl items-center justify-between px-5 py-2.5 sm:px-8 sm:py-3 lg:px-10">
         <Link
           href={getLocalizedPath(locale as Locale)}
           className="group flex items-center"
@@ -40,9 +40,9 @@ export async function SiteHeader({
           data-magnetic
           aria-label={t("brand.homeAria")}
         >
-          <span className="relative block w-[88px] sm:w-[98px] lg:w-[114px]">
+          <span className="relative block w-[86px] sm:w-[96px] lg:w-[110px]">
             <BrandLogo
-              className="h-auto w-full drop-shadow-[0_18px_34px_rgba(7,20,41,0.22)] transition duration-300 group-hover:scale-[1.02] group-hover:drop-shadow-[0_18px_42px_rgba(255,255,255,0.16)]"
+              className="h-auto w-full transition duration-300 group-hover:scale-[1.02]"
               framed
               preload
               variant="compact"
@@ -105,7 +105,7 @@ export async function SiteHeader({
           </Link>
         </div>
 
-        <details className="mobile-menu-trigger group fixed right-5 top-5 z-[60] flex">
+        <details className="mobile-menu-trigger group fixed right-5 top-4 z-[60] flex">
           <summary
             className="flex h-11 w-11 cursor-pointer list-none items-center justify-center border border-white/20 bg-[linear-gradient(135deg,#ffb466_0%,#ff6b00_100%)] shadow-[0_14px_34px_rgba(11,45,89,0.34)]"
             data-cursor-label="Menu"

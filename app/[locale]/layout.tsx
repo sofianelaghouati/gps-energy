@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter_Tight } from "next/font/google";
+import localFont from "next/font/local";
 import { hasLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -13,8 +13,8 @@ import {
 } from "./seo";
 import "../globals.css";
 
-const gpsSans = Inter_Tight({
-  subsets: ["latin"],
+const gpsSans = localFont({
+  src: "../../node_modules/next/dist/next-devtools/server/font/geist-latin.woff2",
   display: "swap",
   variable: "--font-gps-sans",
 });

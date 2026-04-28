@@ -8,7 +8,7 @@ type BrandLogoProps = {
   framed?: boolean;
 };
 
-const logoSource = "/gps-energy-logo-transparent.svg";
+const logoSource = "/gps-energy-logo-transparent.svg?v=white-bg-clean";
 
 export function BrandLogo({
   className = "",
@@ -18,40 +18,31 @@ export function BrandLogo({
   variant = "compact",
 }: BrandLogoProps) {
   const isFull = variant === "full";
+  const logoSizes = isFull
+    ? "(min-width: 1024px) 220px, (min-width: 640px) 198px, 172px"
+    : "(min-width: 1024px) 94px, (min-width: 640px) 82px, 74px";
+  const logoTransform = isFull
+    ? "scale-[1.02] -translate-y-[1.5%]"
+    : "scale-[1.05] -translate-y-[3.5%]";
+  const badgeChrome = framed
+    ? isFull
+      ? "rounded-[18px] p-2 shadow-[0_18px_36px_rgba(7,20,41,0.2)]"
+      : "rounded-[14px] p-1.5 shadow-[0_14px_28px_rgba(7,20,41,0.18)]"
+    : "";
 
   return (
     <span
-      className={`relative block ${className}`}
+      className={`relative block overflow-hidden bg-white ${badgeChrome} ${className}`}
       data-brand-ui="true"
     >
-      {framed ? (
-        <>
-          <span
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-[-10%] rounded-[36px] bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.26),rgba(255,255,255,0.08)_34%,transparent_68%)] blur-2xl"
-          />
-          <span
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-x-[10%] top-[6%] h-[56%] rounded-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.3),rgba(255,255,255,0.1)_40%,transparent_72%)] blur-2xl"
-          />
-          <span
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-x-[8%] bottom-[8%] h-[22%] rounded-full bg-[linear-gradient(90deg,transparent_0%,rgba(255,255,255,0.28)_18%,rgba(255,255,255,0.4)_50%,rgba(255,255,255,0.28)_82%,transparent_100%)] blur-xl"
-          />
-        </>
-      ) : null}
       <Image
         alt={title}
-        className={`relative z-10 block h-auto w-full select-none object-contain ${
-          framed
-            ? "brightness-[1.04] contrast-[1.08] saturate-[1.05] drop-shadow-[0_0_28px_rgba(255,255,255,0.26)] drop-shadow-[0_18px_34px_rgba(7,20,41,0.22)]"
-            : "drop-shadow-[0_0_18px_rgba(255,255,255,0.22)] drop-shadow-[0_14px_28px_rgba(7,20,41,0.16)]"
-        }`}
+        className={`block h-auto w-full select-none object-contain transform-gpu ${logoTransform}`}
         draggable="false"
         src={logoSource}
         width={1280}
-        height={1191}
-        sizes={isFull ? "(min-width: 640px) 286px, 228px" : "(min-width: 1024px) 114px, (min-width: 640px) 98px, 88px"}
+        height={1060}
+        sizes={logoSizes}
         preload={preload}
         unoptimized
       />

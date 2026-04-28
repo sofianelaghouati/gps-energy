@@ -84,11 +84,11 @@ summary::-webkit-details-marker {
 
 .premium-hero-grid {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.047) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.047) 1px, transparent 1px),
-    radial-gradient(circle at 74% 42%, rgba(255, 152, 72, 0.22), transparent 34%),
-    radial-gradient(circle at 58% 18%, rgba(255, 107, 0, 0.18), transparent 24%),
-    radial-gradient(circle at 28% 72%, rgba(255, 255, 255, 0.18), transparent 30%);
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    radial-gradient(circle at 74% 42%, rgba(255, 152, 72, 0.14), transparent 34%),
+    radial-gradient(circle at 58% 18%, rgba(255, 107, 0, 0.11), transparent 24%),
+    radial-gradient(circle at 28% 72%, rgba(255, 255, 255, 0.11), transparent 30%);
   background-size: 96px 96px, 96px 96px, 100% 100%;
   mask-image: linear-gradient(
     90deg,
@@ -97,7 +97,7 @@ summary::-webkit-details-marker {
     black 88%,
     transparent 100%
   );
-  opacity: 0.38;
+  opacity: 0.24;
 }
 
 .premium-hero-sheen {
@@ -112,7 +112,7 @@ summary::-webkit-details-marker {
     ),
     linear-gradient(180deg, transparent 0%, rgba(11, 45, 89, 0.54) 100%);
   mix-blend-mode: screen;
-  opacity: 0.42;
+  opacity: 0.24;
 }
 
 [data-magnetic] {

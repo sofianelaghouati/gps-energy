@@ -364,7 +364,7 @@ export function CompanyProfileShowcase({
             </p>
             <div className="mt-4 h-px w-16 bg-[#ff6b00]" />
           </div>
-          <div className="w-[6rem] shrink-0 sm:w-[7rem]">
+          <div className="w-[5.6rem] shrink-0 sm:w-[6.4rem]">
             <BrandLogo className="h-auto w-full opacity-100" framed />
           </div>
         </div>

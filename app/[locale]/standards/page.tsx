@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
+import { AmbientMedia } from "../ambient-media";
 import { HomeAnimations } from "../home-animations";
 import { JsonLd } from "../json-ld";
 import { PageHero } from "../page-hero";
@@ -8,6 +9,7 @@ import { SiteFooter } from "../site-footer";
 import { SiteHeader } from "../site-header";
 import { buildBreadcrumbJsonLd, buildPageMetadata, buildWebPageJsonLd } from "../seo";
 import { standardKeys } from "../site-data";
+import { siteMedia } from "../site-media";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -67,6 +69,13 @@ export default async function StandardsPage({ params }: Props) {
         <SiteHeader currentPath="/standards" locale={locale} page="standards" />
         <PageHero
           backgroundMedia="flareStack"
+          accentMedia="algeriaElMerkRigNight"
+          galleryMedia={[
+            "naturalGasWell",
+            "oilWellheadChristmasTree",
+            "algeriaElMerkRig",
+            "saharaDrone",
+          ]}
           eyebrow={pageT("hero.eyebrow")}
           title={pageT("hero.title")}
           copy={pageT("hero.copy")}
@@ -77,8 +86,14 @@ export default async function StandardsPage({ params }: Props) {
           ]}
         />
 
-        <section className="border-b border-white/10 bg-[#12396f] px-5 py-18 text-white sm:px-8 lg:px-10">
-          <div className="mx-auto max-w-7xl">
+        <section className="relative border-b border-white/10 bg-[#12396f] px-5 py-18 text-white sm:px-8 lg:px-10">
+          <AmbientMedia
+            image={siteMedia.naturalGasWell.image}
+            imageAlt={siteMedia.naturalGasWell.alt}
+            imageClassName="object-cover object-[72%_center] opacity-15"
+            overlayClassName="bg-[linear-gradient(90deg,rgba(18,57,111,0.94)_0%,rgba(18,57,111,0.86)_50%,rgba(11,45,89,0.82)_100%)]"
+          />
+          <div className="relative mx-auto max-w-7xl">
             <div data-section-reveal data-reveal-from="left" className="max-w-3xl">
               <p className="text-xs font-semibold uppercase text-[#ff9a46]">
                 {homeT("safety.eyebrow")}
@@ -111,8 +126,14 @@ export default async function StandardsPage({ params }: Props) {
           </div>
         </section>
 
-        <section className="bg-[#edf3fa] px-5 py-18 text-[#0a203d] sm:px-8 lg:px-10">
-          <div className="mx-auto max-w-7xl">
+        <section className="relative bg-[#edf3fa] px-5 py-18 text-[#0a203d] sm:px-8 lg:px-10">
+          <AmbientMedia
+            image={siteMedia.oilWellheadChristmasTree.image}
+            imageAlt={siteMedia.oilWellheadChristmasTree.alt}
+            imageClassName="object-cover object-[74%_center] opacity-10"
+            overlayClassName="bg-[linear-gradient(90deg,rgba(237,243,250,0.97)_0%,rgba(237,243,250,0.92)_48%,rgba(237,243,250,0.88)_100%)]"
+          />
+          <div className="relative mx-auto max-w-7xl">
             <div data-section-reveal data-reveal-from="left" className="max-w-3xl">
               <p className="text-xs font-semibold uppercase text-[#12396f]">
                 {pageT("assurance.eyebrow")}

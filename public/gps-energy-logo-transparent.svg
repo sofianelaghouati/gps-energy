@@ -1,12 +1,13 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 1280 1191"
+  viewBox="0 0 1280 1060"
   width="1280"
-  height="1191"
+  height="1060"
   role="img"
   aria-label="GPS Energy"
 >
   <title>GPS Energy</title>
+  <rect id="gps-logo-background" width="1280" height="1060" rx="44" fill="#ffffff" />
   <defs>
     <linearGradient id="gps-navy" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#0b3a68" />
@@ -17,12 +18,6 @@
       <stop offset=".58" stop-color="#ff6306" />
       <stop offset="1" stop-color="#f05200" />
     </linearGradient>
-    <filter id="gps-soft-shadow" x="-8%" y="-8%" width="116%" height="116%">
-      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#061d38" flood-opacity=".28" />
-    </filter>
-    <filter id="gps-orange-shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#ff6b00" flood-opacity=".22" />
-    </filter>
     <mask id="gps-gear-mask">
       <rect width="1280" height="1191" fill="#000" />
       <g fill="#fff" transform="translate(655 410)">
@@ -43,7 +38,7 @@
     </mask>
   </defs>
 
-  <g filter="url(#gps-soft-shadow)">
+  <g>
     <rect width="1280" height="760" fill="url(#gps-navy)" mask="url(#gps-gear-mask)" />
 
     <path
@@ -58,7 +53,7 @@
     />
   </g>
 
-  <g filter="url(#gps-orange-shadow)">
+  <g>
     <path
       fill="url(#gps-orange)"
       fill-rule="evenodd"
@@ -68,7 +63,6 @@
   </g>
 
   <g
-    filter="url(#gps-soft-shadow)"
     font-family="Eurostile Extended, Microgramma D Extended, BankGothic Md BT, Arial Black, Arial, sans-serif"
     font-weight="900"
     letter-spacing=".04em"
@@ -91,7 +85,7 @@
     >ENERGY</text>
   </g>
 
-  <g filter="url(#gps-soft-shadow)">
+  <g>
     <text
       x="640"
       y="1018"
