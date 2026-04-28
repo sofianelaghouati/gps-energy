@@ -14,9 +14,9 @@
       <stop offset="1" stop-color="#042a54" />
     </linearGradient>
     <linearGradient id="gps-orange" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0" stop-color="#ff7c12" />
-      <stop offset=".58" stop-color="#ff6306" />
-      <stop offset="1" stop-color="#f05200" />
+      <stop offset="0" stop-color="#ff7a12" />
+      <stop offset=".58" stop-color="#ff5f05" />
+      <stop offset="1" stop-color="#f05300" />
     </linearGradient>
     <mask id="gps-gear-mask">
       <rect width="1280" height="1191" fill="#000" />
@@ -51,14 +51,18 @@
          M628 509 L629 513 L671 512 L660 466 L652 447 L645 447 L642 450 Z
          M663 566 L665 574 L695 602 L682 548 Z"
     />
+    <path
+      fill="url(#gps-navy)"
+      fill-rule="evenodd"
+      d="M494 384 L496 365 L502 345 L519 315 L535 299 L550 288 L574 279 L585 282 L587 286 L586 312 L578 349 L562 378 L562 382 L560 382 L523 436 L513 444 L502 440 L495 416 Z"
+    />
   </g>
 
   <g>
     <path
       fill="url(#gps-orange)"
       fill-rule="evenodd"
-      d="M445 717 L488 694 L528 680 L576 668 L632 661 L696 662 L748 670 L808 688 L863 715 L863 717 L859 717 L808 704 L760 697 L688 692 L640 692 L541 698 L475 710 L450 718 Z
-         M494 384 L496 365 L502 345 L519 315 L535 299 L550 288 L574 279 L585 282 L587 286 L586 312 L578 349 L562 378 L562 382 L560 382 L523 436 L513 444 L502 440 L495 416 Z"
+      d="M445 717 L488 694 L528 680 L576 668 L632 661 L696 662 L748 670 L808 688 L863 715 L863 717 L859 717 L808 704 L760 697 L688 692 L640 692 L541 698 L475 710 L450 718 Z"
     />
   </g>
 
@@ -70,7 +74,7 @@
     <text
       x="143"
       y="918"
-      fill="url(#gps-navy)"
+      fill="url(#gps-orange)"
       font-size="143"
       textLength="330"
       lengthAdjust="spacingAndGlyphs"
@@ -97,9 +101,9 @@
       text-anchor="middle"
       textLength="750"
       lengthAdjust="spacingAndGlyphs"
-    >ENERGIE &amp; INNOVATION</text>
+    >INNOVATION &amp; PERFORMANCE</text>
   </g>
-  <g fill="#ffad72">
+  <g fill="#ff6b00">
     <rect x="144" y="994" width="118" height="7" rx="3.5" />
     <rect x="1070" y="994" width="118" height="7" rx="3.5" />
   </g>
