@@ -1,15 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #557da5;
+  --background: #12396f;
   --foreground: #ffffff;
-  --brand-bronze: #a38356;
-  --brand-ember: #ff8f2b;
-  --brand-ember-soft: #ffb062;
-  --brand-blue: #557da5;
-  --brand-deep-blue: #244766;
-  --graphite: #244766;
-  --steel: #9fb2c4;
+  --brand-bronze: #ff9848;
+  --brand-ember: #ff6b00;
+  --brand-ember-soft: #ffb466;
+  --brand-blue: #12396f;
+  --brand-blue-soft: #23518c;
+  --brand-deep-blue: #0b2d59;
+  --graphite: #0c2342;
+  --steel: #acc2d9;
   --font-display:
     var(--font-gps-sans),
     "Helvetica Neue",
@@ -55,7 +56,7 @@ summary,
 }
 
 ::selection {
-  background: var(--brand-bronze);
+  background: var(--brand-ember);
   color: #ffffff;
 }
 
@@ -85,8 +86,8 @@ summary::-webkit-details-marker {
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.047) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.047) 1px, transparent 1px),
-    radial-gradient(circle at 74% 42%, rgba(163, 131, 86, 0.22), transparent 34%),
-    radial-gradient(circle at 58% 18%, rgba(255, 143, 43, 0.16), transparent 24%),
+    radial-gradient(circle at 74% 42%, rgba(255, 152, 72, 0.22), transparent 34%),
+    radial-gradient(circle at 58% 18%, rgba(255, 107, 0, 0.18), transparent 24%),
     radial-gradient(circle at 28% 72%, rgba(255, 255, 255, 0.18), transparent 30%);
   background-size: 96px 96px, 96px 96px, 100% 100%;
   mask-image: linear-gradient(
@@ -109,7 +110,7 @@ summary::-webkit-details-marker {
       transparent 59%,
       transparent 100%
     ),
-    linear-gradient(180deg, transparent 0%, rgba(47, 88, 123, 0.52) 100%);
+    linear-gradient(180deg, transparent 0%, rgba(11, 45, 89, 0.54) 100%);
   mix-blend-mode: screen;
   opacity: 0.42;
 }
@@ -126,8 +127,8 @@ summary::-webkit-details-marker {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(163, 131, 86, 0.92),
-    rgba(255, 143, 43, 0.94),
+    rgba(255, 152, 72, 0.92),
+    rgba(255, 107, 0, 0.96),
     transparent
   );
   bottom: -0.55rem;
@@ -175,8 +176,8 @@ summary::-webkit-details-marker {
 
 .premium-button::after {
   background:
-    radial-gradient(circle at 50% 50%, rgba(255, 143, 43, 0.24), transparent 48%),
-    radial-gradient(circle at 50% 50%, rgba(163, 131, 86, 0.18), transparent 62%);
+    radial-gradient(circle at 50% 50%, rgba(255, 107, 0, 0.28), transparent 48%),
+    radial-gradient(circle at 50% 50%, rgba(255, 180, 102, 0.22), transparent 62%);
   content: "";
   inset: -28%;
   opacity: 0;
@@ -250,10 +251,10 @@ summary::-webkit-details-marker {
 }
 
 [data-premium-card]:hover {
-  border-color: rgba(255, 143, 43, 0.28);
+  border-color: rgba(255, 107, 0, 0.3);
   box-shadow:
-    0 22px 56px rgba(36, 71, 102, 0.18),
-    0 0 0 1px rgba(255, 143, 43, 0.08);
+    0 22px 56px rgba(11, 45, 89, 0.22),
+    0 0 0 1px rgba(255, 107, 0, 0.1);
 }
 
 .premium-cursor-ring,
@@ -268,11 +269,11 @@ summary::-webkit-details-marker {
 .premium-cursor-ring {
   backdrop-filter: blur(8px);
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(163, 131, 86, 0.62);
+  border: 1px solid rgba(255, 152, 72, 0.68);
   border-radius: 999px;
   box-shadow:
-    0 0 30px rgba(85, 125, 165, 0.2),
-    0 0 44px rgba(255, 143, 43, 0.12);
+    0 0 30px rgba(18, 57, 111, 0.24),
+    0 0 44px rgba(255, 107, 0, 0.18);
   height: 54px;
   width: 54px;
 }
@@ -281,14 +282,14 @@ summary::-webkit-details-marker {
   background: var(--brand-ember);
   border-radius: 999px;
   box-shadow:
-    0 0 20px rgba(255, 143, 43, 0.54),
+    0 0 20px rgba(255, 107, 0, 0.58),
     0 0 42px rgba(255, 255, 255, 0.18);
   height: 8px;
   width: 8px;
 }
 
 .premium-cursor-label {
-  background: rgba(36, 71, 102, 0.76);
+  background: rgba(11, 45, 89, 0.82);
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 999px;
   color: white;

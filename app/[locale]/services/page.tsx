@@ -74,7 +74,7 @@ export default async function ServicesPage({ params }: Props) {
       <JsonLd data={pageJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
       <JsonLd data={servicesJsonLd} />
-      <main className="overflow-hidden bg-[#557da5] text-white">
+      <main className="overflow-hidden bg-[#12396f] text-white">
         <SiteHeader currentPath="/services" locale={locale} page="services" />
         <PageHero
           backgroundMedia="hero"
@@ -88,10 +88,10 @@ export default async function ServicesPage({ params }: Props) {
           ]}
         />
 
-        <section className="bg-[#e7eff6] px-5 py-18 text-[#17334d] sm:px-8 lg:px-10">
+        <section className="bg-[#edf3fa] px-5 py-18 text-[#0a203d] sm:px-8 lg:px-10">
           <div className="mx-auto max-w-7xl">
             <div data-section-reveal data-reveal-from="left" className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase text-[#a38356]">
+              <p className="text-xs font-semibold uppercase text-[#ff9a46]">
                 {pageT("core.eyebrow")}
               </p>
               <h2 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl">
@@ -107,9 +107,9 @@ export default async function ServicesPage({ params }: Props) {
                   data-reveal-from={services.indexOf(service) % 2 === 0 ? "left" : "right"}
                   className="relative overflow-hidden border border-black/10 bg-white p-6 shadow-sm"
                 >
-                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#a38356] to-[#557da5]" />
+                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#ffb466] to-[#12396f]" />
                   <div className="flex items-start justify-between gap-4">
-                    <span className="font-mono text-xs text-[#557da5]">
+                    <span className="font-mono text-xs text-[#12396f]">
                       0{index + 1}
                     </span>
                     <span className="inline-flex h-10 min-w-10 items-center justify-center border border-black/10 bg-[#f3f7fb] px-3 text-[0.68rem] font-semibold uppercase">
@@ -122,7 +122,7 @@ export default async function ServicesPage({ params }: Props) {
                   <p className="mt-5 text-sm leading-6 text-[#546273]">
                     {service.copy}
                   </p>
-                  <p className="mt-8 border-t border-black/10 pt-5 text-sm font-semibold text-[#17334d]">
+                  <p className="mt-8 border-t border-black/10 pt-5 text-sm font-semibold text-[#0a203d]">
                     {service.benefit}
                   </p>
                 </article>
@@ -131,10 +131,10 @@ export default async function ServicesPage({ params }: Props) {
           </div>
         </section>
 
-        <section className="bg-white px-5 py-18 text-[#17334d] sm:px-8 lg:px-10">
+        <section className="bg-white px-5 py-18 text-[#0a203d] sm:px-8 lg:px-10">
           <div className="mx-auto max-w-7xl">
             <div data-section-reveal data-reveal-from="left" className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase text-[#557da5]">
+              <p className="text-xs font-semibold uppercase text-[#12396f]">
                 {pageT("support.eyebrow")}
               </p>
               <h2 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl">
@@ -151,9 +151,9 @@ export default async function ServicesPage({ params }: Props) {
                   data-section-reveal
                   data-premium-card
                   data-reveal-from={capabilities.indexOf(item) % 2 === 0 ? "left" : "right"}
-                  className="bg-[#f3f7fb] p-6"
+                  className="bg-[#f5f8fc] p-6"
                 >
-                  <h3 className="text-2xl font-semibold text-[#17334d]">
+                  <h3 className="text-2xl font-semibold text-[#0a203d]">
                     {item.title}
                   </h3>
                   <p className="mt-4 text-sm leading-6 text-[#546273]">
@@ -165,14 +165,14 @@ export default async function ServicesPage({ params }: Props) {
           </div>
         </section>
 
-        <section className="border-y border-white/10 bg-[#365f84] px-5 py-18 text-white sm:px-8 lg:px-10">
+        <section className="border-y border-white/10 bg-[#0f3f74] px-5 py-18 text-white sm:px-8 lg:px-10">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.05fr_0.95fr]">
             <div
               data-section-reveal
               data-reveal-from="left"
               className="border border-white/10 bg-white/[0.03] p-7 backdrop-blur-sm sm:p-10"
             >
-              <p className="text-xs font-semibold uppercase text-[#a38356]">
+              <p className="text-xs font-semibold uppercase text-[#ff9a46]">
                 {pageT("focus.eyebrow")}
               </p>
               <h2 className="mt-4 text-4xl font-semibold leading-[1.04] sm:text-6xl">

@@ -41,15 +41,23 @@ const nextConfig: NextConfig = {
         headers: immutableAssetHeaders,
       },
       {
-        source: "/gps-energy-logo.png",
+        source: "/algeria-sahara-drone-1920.jpg",
         headers: immutableAssetHeaders,
       },
       {
-        source: "/gps-energy-mark.png",
+        source: "/grand-erg-camel-4608.jpg",
         headers: immutableAssetHeaders,
       },
       {
-        source: "/gps-energy-logo-premium.svg",
+        source: "/hassi-messaoud-desert-768.jpg",
+        headers: immutableAssetHeaders,
+      },
+      {
+        source: "/tassili-dunes-4032.jpg",
+        headers: immutableAssetHeaders,
+      },
+      {
+        source: "/gps-energy-logo-transparent.svg",
         headers: immutableAssetHeaders,
       },
     ];

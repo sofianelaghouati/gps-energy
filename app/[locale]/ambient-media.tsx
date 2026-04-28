@@ -6,7 +6,7 @@ type Props = {
   imageAlt?: string;
   imageClassName?: string;
   overlayClassName?: string;
-  priority?: boolean;
+  preload?: boolean;
   videoClassName?: string;
   videoPoster?: string;
   videoSrc?: string;
@@ -18,7 +18,7 @@ export function AmbientMedia({
   imageAlt = "",
   imageClassName = "",
   overlayClassName = "",
-  priority = false,
+  preload = false,
   videoClassName = "",
   videoPoster,
   videoSrc,
@@ -32,7 +32,7 @@ export function AmbientMedia({
         src={image}
         alt={imageAlt}
         fill
-        priority={priority}
+        preload={preload}
         placeholder="blur"
         sizes="100vw"
         className={`object-cover ${imageClassName}`}

@@ -1,103 +1,60 @@
+import Image from "next/image";
+
 type BrandLogoProps = {
   className?: string;
+  preload?: boolean;
   title?: string;
   variant?: "compact" | "full";
   framed?: boolean;
 };
 
-function GearPumpjackMark() {
-  const teeth = [
-    { x: -12, y: -114, width: 24, height: 34, rotate: 0 },
-    { x: -12, y: -114, width: 24, height: 34, rotate: -42 },
-    { x: -12, y: -114, width: 24, height: 34, rotate: 42 },
-    { x: -12, y: -114, width: 24, height: 34, rotate: -82 },
-    { x: -12, y: -114, width: 24, height: 34, rotate: 82 },
-    { x: -13, y: -111, width: 26, height: 38, rotate: -124 },
-    { x: -13, y: -111, width: 26, height: 38, rotate: 124 },
-  ];
-
-  return (
-    <g>
-      <g fill="#ffffff">
-        {teeth.map((tooth) => (
-          <rect
-            height={tooth.height}
-            key={tooth.rotate}
-            rx="3"
-            transform={`rotate(${tooth.rotate})`}
-            width={tooth.width}
-            x={tooth.x}
-            y={tooth.y}
-          />
-        ))}
-        <path d="M-115 31a115 115 0 0 1 230 0H73a73 73 0 0 0-146 0z" />
-        <rect height="44" rx="5" width="44" x="-136" y="5" />
-        <rect height="44" rx="5" width="44" x="92" y="5" />
-      </g>
-
-      <g
-        fill="none"
-        stroke="#ffffff"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M-55-9 52 47" strokeWidth="13" />
-        <path d="M46 47h40" strokeWidth="10" />
-        <path d="M-75-13c11-21 29-27 45-16" strokeWidth="14" />
-        <circle cx="-56" cy="-9" fill="#ffffff" r="8" stroke="none" />
-        <path d="M-37 99 0 30l38 69" strokeWidth="8" />
-        <path d="M-20 68h40M-10 48l20 51M10 48l-20 51" strokeWidth="6" />
-      </g>
-    </g>
-  );
-}
+const logoSource = "/gps-energy-logo-transparent.svg";
 
 export function BrandLogo({
   className = "",
   framed = false,
+  preload = false,
   title = "GPS Energy",
   variant = "compact",
 }: BrandLogoProps) {
   const isFull = variant === "full";
-  const viewBox = framed ? "0 0 746 402" : "130 0 486 358";
 
   return (
-    <svg
-      aria-label={title}
-      className={className}
+    <span
+      className={`relative block ${className}`}
       data-brand-ui="true"
-      role="img"
-      viewBox={viewBox}
-      xmlns="http://www.w3.org/2000/svg"
     >
-      <title>{title}</title>
-      {framed ? <rect fill="#557da5" height="402" width="746" /> : null}
-      <g transform={`translate(373 ${isFull ? 118 : 120}) scale(${isFull ? 0.88 : 0.9})`}>
-        <GearPumpjackMark />
-      </g>
-      <text
-        fill="#ffffff"
-        fontFamily="var(--font-display)"
-        fontSize={isFull ? "62" : "64"}
-        fontWeight="700"
-        letterSpacing="1.4"
-        lengthAdjust="spacingAndGlyphs"
-        textAnchor="middle"
-        textLength={isFull ? "370" : "374"}
-        x="373"
-        y={isFull ? "273" : "275"}
-      >
-        GPS ENERGY
-      </text>
-      <line
-        stroke="#a38356"
-        strokeLinecap="round"
-        strokeWidth="7"
-        x1="160"
-        x2="586"
-        y1={isFull ? "334" : "333"}
-        y2={isFull ? "334" : "333"}
+      {framed ? (
+        <>
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-[-10%] rounded-[36px] bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.26),rgba(255,255,255,0.08)_34%,transparent_68%)] blur-2xl"
+          />
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-x-[10%] top-[6%] h-[56%] rounded-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.3),rgba(255,255,255,0.1)_40%,transparent_72%)] blur-2xl"
+          />
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-x-[8%] bottom-[8%] h-[22%] rounded-full bg-[linear-gradient(90deg,transparent_0%,rgba(255,255,255,0.28)_18%,rgba(255,255,255,0.4)_50%,rgba(255,255,255,0.28)_82%,transparent_100%)] blur-xl"
+          />
+        </>
+      ) : null}
+      <Image
+        alt={title}
+        className={`relative z-10 block h-auto w-full select-none object-contain ${
+          framed
+            ? "brightness-[1.04] contrast-[1.08] saturate-[1.05] drop-shadow-[0_0_28px_rgba(255,255,255,0.26)] drop-shadow-[0_18px_34px_rgba(7,20,41,0.22)]"
+            : "drop-shadow-[0_0_18px_rgba(255,255,255,0.22)] drop-shadow-[0_14px_28px_rgba(7,20,41,0.16)]"
+        }`}
+        draggable="false"
+        src={logoSource}
+        width={1280}
+        height={1191}
+        sizes={isFull ? "(min-width: 640px) 286px, 228px" : "(min-width: 1024px) 114px, (min-width: 640px) 98px, 88px"}
+        preload={preload}
+        unoptimized
       />
-    </svg>
+    </span>
   );
 }

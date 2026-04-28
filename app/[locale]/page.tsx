@@ -199,7 +199,7 @@ export default async function Home({ params }: Props) {
       <HomeAnimations />
       <JsonLd data={pageJsonLd} />
       <JsonLd data={servicesJsonLd} />
-      <main className="overflow-hidden bg-[#557da5] text-white">
+      <main className="overflow-hidden bg-[#12396f] text-white">
         <section
           id="top"
           data-hero
@@ -208,8 +208,8 @@ export default async function Home({ params }: Props) {
           <HeroOilScene />
           <div className="premium-hero-grid" />
           <div className="premium-hero-sheen" />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(85,125,165,0.94)_0%,rgba(85,125,165,0.7)_46%,rgba(85,125,165,0.28)_100%)]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_76%_28%,rgba(255,143,43,0.26),transparent_24%),radial-gradient(circle_at_58%_16%,rgba(163,131,86,0.2),transparent_20%),radial-gradient(circle_at_28%_72%,rgba(248,251,255,0.12),transparent_28%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(18,57,111,0.94)_0%,rgba(18,57,111,0.72)_46%,rgba(11,45,89,0.28)_100%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_76%_28%,rgba(255,107,0,0.28),transparent_24%),radial-gradient(circle_at_58%_16%,rgba(255,180,102,0.18),transparent_20%),radial-gradient(circle_at_28%_72%,rgba(248,251,255,0.12),transparent_28%)]" />
           <SiteHeader currentPath="/" locale={locale} page="home" overlay />
           <div className="relative z-10 mx-auto flex min-h-[92svh] max-w-7xl items-end px-5 pb-12 pt-32 sm:px-8 sm:pb-16 lg:px-10">
             <div className="grid w-full gap-10 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end">
@@ -219,7 +219,7 @@ export default async function Home({ params }: Props) {
                   data-reveal-from="left"
                   className="mb-7 flex items-center gap-4 text-xs font-semibold uppercase text-white/82"
                 >
-                  <span className="h-px w-12 bg-[#a38356]" />
+                  <span className="h-px w-12 bg-[#ff9a46]" />
                   <span>{t("hero.eyebrow")}</span>
                 </div>
 
@@ -234,7 +234,7 @@ export default async function Home({ params }: Props) {
                 <h1
                   data-hero-reveal
                   data-reveal-from="left"
-                  className="mt-4 max-w-[21rem] break-words text-[2.35rem] font-semibold uppercase leading-[0.96] text-white drop-shadow-[0_8px_22px_rgba(36,71,102,0.32)] sm:max-w-3xl sm:text-6xl lg:text-[5.25rem]"
+                  className="mt-4 max-w-[21rem] break-words text-[2.35rem] font-semibold uppercase leading-[0.96] text-white drop-shadow-[0_8px_22px_rgba(11,45,89,0.34)] sm:max-w-3xl sm:text-6xl lg:text-[5.25rem]"
                 >
                   <span className="block text-white">{t("hero.title")}</span>
                 </h1>
@@ -254,7 +254,7 @@ export default async function Home({ params }: Props) {
                 >
                   <Link
                     href={getLocalizedPath(locale as Locale, "/contact")}
-                    className="premium-button inline-flex min-h-12 items-center justify-center bg-[linear-gradient(135deg,#a38356_0%,#ff8f2b_100%)] px-6 text-sm font-semibold text-white shadow-[0_0_44px_rgba(255,143,43,0.24)] transition hover:bg-white hover:text-[#17334d] hover:shadow-[0_0_54px_rgba(255,255,255,0.18)]"
+                    className="premium-button inline-flex min-h-12 items-center justify-center bg-[linear-gradient(135deg,#ffb466_0%,#ff6b00_100%)] px-6 text-sm font-semibold text-white shadow-[0_0_44px_rgba(255,107,0,0.24)] transition hover:bg-white hover:text-[#0b2d59] hover:shadow-[0_0_54px_rgba(255,255,255,0.18)]"
                     data-cursor-label={t("hero.primaryCta")}
                     data-magnetic
                   >
@@ -262,7 +262,7 @@ export default async function Home({ params }: Props) {
                   </Link>
                   <Link
                     href={getLocalizedPath(locale as Locale, "/services")}
-                    className="premium-button inline-flex min-h-12 items-center justify-center border border-white/18 px-6 text-sm font-semibold text-white transition hover:border-white hover:bg-white hover:text-[#17334d]"
+                    className="premium-button inline-flex min-h-12 items-center justify-center border border-white/18 px-6 text-sm font-semibold text-white transition hover:border-white hover:bg-white hover:text-[#0b2d59]"
                     data-cursor-label={t("hero.secondaryCta")}
                     data-magnetic
                   >
@@ -278,7 +278,7 @@ export default async function Home({ params }: Props) {
               >
                 <div
                   data-vertical-line
-                  className="mb-6 h-20 w-px bg-gradient-to-b from-[#ff8f2b] via-[#a38356] to-[#557da5]"
+                  className="mb-6 h-20 w-px bg-gradient-to-b from-[#ff6b00] via-[#ffb466] to-[#12396f]"
                 />
                 <p className="max-w-sm text-sm leading-6">
                   {t("hero.sideCopy")}
@@ -318,13 +318,13 @@ export default async function Home({ params }: Props) {
         <section
           id="expertise"
           data-scroll-shell
-          className="relative min-h-[180svh] bg-[#e7eff6] text-[#17334d]"
+          className="relative min-h-[180svh] bg-[#edf3fa] text-[#0a203d]"
         >
           <AmbientMedia
             image={siteMedia.roughnecks.image}
             imageAlt={siteMedia.roughnecks.alt}
             imageClassName="object-cover object-[68%_center] opacity-12"
-            overlayClassName="bg-[linear-gradient(90deg,rgba(238,243,247,0.96)_0%,rgba(238,243,247,0.84)_45%,rgba(238,243,247,0.8)_100%)]"
+            overlayClassName="bg-[linear-gradient(90deg,rgba(243,247,252,0.96)_0%,rgba(243,247,252,0.84)_45%,rgba(243,247,252,0.8)_100%)]"
           />
           <div
             data-scroll-panel
@@ -332,7 +332,7 @@ export default async function Home({ params }: Props) {
           >
             <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
               <div data-scroll-copy className="max-w-xl">
-                <p className="text-xs font-semibold uppercase text-[#557da5]">
+                <p className="text-xs font-semibold uppercase text-[#12396f]">
                   {t("expertise.eyebrow")}
                 </p>
                 <h2 className="mt-5 max-w-xl text-4xl font-semibold leading-[1.02] sm:text-6xl">
@@ -357,10 +357,10 @@ export default async function Home({ params }: Props) {
                       data-premium-card
                       className="border border-black/10 bg-white p-6 shadow-sm"
                     >
-                      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#557da5]">
+                      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#12396f]">
                         {item.label}
                       </p>
-                      <h3 className="mt-5 text-3xl font-semibold text-[#17334d]">
+                      <h3 className="mt-5 text-3xl font-semibold text-[#0a203d]">
                         {item.value}
                       </h3>
                       <p className="mt-4 text-sm leading-6 text-[#546273]">
@@ -374,7 +374,7 @@ export default async function Home({ params }: Props) {
           </div>
         </section>
 
-        <section className="bg-[#17334d] px-5 py-18 text-white sm:px-8 lg:px-10">
+        <section className="bg-[#0b2d59] px-5 py-18 text-white sm:px-8 lg:px-10">
           <div className="mx-auto max-w-7xl">
             <SaharaMapShowcase
               eyebrow={saharaSection.eyebrow}
@@ -389,7 +389,7 @@ export default async function Home({ params }: Props) {
         <section
           id="services"
           data-scroll-shell
-          className="relative min-h-[180svh] bg-white text-[#17334d]"
+          className="relative min-h-[180svh] bg-white text-[#0a203d]"
         >
           <AmbientMedia
             image={siteMedia.hero.image}
@@ -407,7 +407,7 @@ export default async function Home({ params }: Props) {
             <div className="mx-auto max-w-7xl">
               <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
                 <div data-scroll-copy>
-                  <p className="text-xs font-semibold uppercase text-[#ff8f2b]">
+                  <p className="text-xs font-semibold uppercase text-[#ff6b00]">
                     {t("nav.services")}
                   </p>
                   <h2 className="mt-4 max-w-3xl text-4xl font-semibold leading-[1.04] sm:text-6xl">
@@ -431,14 +431,14 @@ export default async function Home({ params }: Props) {
                   <article
                     key={service.key}
                     data-premium-card
-                    className="group relative min-h-[320px] overflow-hidden border border-black/10 bg-[#f3f7fb] p-6 shadow-sm"
+                    className="group relative min-h-[320px] overflow-hidden border border-black/10 bg-[#f5f8fc] p-6 shadow-sm"
                   >
-                    <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#ff8f2b] via-[#a38356] to-[#557da5]" />
+                    <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#ff6b00] via-[#ffb466] to-[#12396f]" />
                     <div className="flex items-start justify-between gap-4">
-                      <span className="font-mono text-xs text-[#557da5]">
+                      <span className="font-mono text-xs text-[#12396f]">
                         0{index + 1}
                       </span>
-                      <span className="inline-flex h-10 min-w-10 items-center justify-center border border-black/10 bg-white px-3 text-[0.68rem] font-semibold uppercase text-[#17334d]">
+                      <span className="inline-flex h-10 min-w-10 items-center justify-center border border-black/10 bg-white px-3 text-[0.68rem] font-semibold uppercase text-[#0a203d]">
                         O&amp;G
                       </span>
                     </div>
@@ -448,7 +448,7 @@ export default async function Home({ params }: Props) {
                     <p className="mt-5 text-sm leading-6 text-[#546273]">
                       {service.copy}
                     </p>
-                    <p className="mt-8 border-t border-black/10 pt-5 text-sm font-semibold text-[#17334d]">
+                    <p className="mt-8 border-t border-black/10 pt-5 text-sm font-semibold text-[#0a203d]">
                       {service.benefit}
                     </p>
                   </article>
@@ -460,7 +460,7 @@ export default async function Home({ params }: Props) {
 
         <section
           data-scroll-shell
-          className="relative min-h-[180svh] bg-[#557da5] text-white"
+          className="relative min-h-[180svh] bg-[#12396f] text-white"
         >
           <div
             data-scroll-panel
@@ -468,7 +468,7 @@ export default async function Home({ params }: Props) {
           >
             <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
               <div data-scroll-copy className="max-w-2xl">
-                <p className="text-xs font-semibold uppercase text-[#ff8f2b]">
+                <p className="text-xs font-semibold uppercase text-[#ff6b00]">
                   {t("capabilities.eyebrow")}
                 </p>
                 <h2 className="mt-4 text-4xl font-semibold leading-[1.05] sm:text-6xl">
@@ -484,7 +484,7 @@ export default async function Home({ params }: Props) {
                   <article
                     key={item.key}
                     data-premium-card
-                    className="bg-[#365f84] p-6"
+                    className="bg-[#1a4e88] p-6"
                   >
                     <h3 className="text-xl font-semibold text-white">
                       {item.title}
@@ -501,7 +501,7 @@ export default async function Home({ params }: Props) {
 
         <section
           data-scroll-shell
-          className="relative min-h-[180svh] bg-[#e7eff6] text-[#17334d]"
+          className="relative min-h-[180svh] bg-[#edf3fa] text-[#0a203d]"
         >
           <div
             data-scroll-panel
@@ -512,7 +512,7 @@ export default async function Home({ params }: Props) {
                 data-scroll-copy
                 className="border border-black/10 bg-white p-7 shadow-sm sm:p-10"
               >
-                <p className="text-xs font-semibold uppercase text-[#ff8f2b]">
+                <p className="text-xs font-semibold uppercase text-[#ff6b00]">
                   {t("jetPump.eyebrow")}
                 </p>
                 <h2 className="mt-4 max-w-3xl text-4xl font-semibold leading-[1.04] sm:text-6xl">
@@ -526,7 +526,7 @@ export default async function Home({ params }: Props) {
                     <div
                       key={point}
                       data-premium-card
-                      className="border border-black/10 bg-[#f3f7fb] px-4 py-4 text-sm font-medium text-[#17334d]"
+                    className="border border-black/10 bg-[#f5f8fc] px-4 py-4 text-sm font-medium text-[#0a203d]"
                     >
                       {point}
                     </div>
@@ -537,10 +537,10 @@ export default async function Home({ params }: Props) {
               <aside
                 data-scroll-visual
                 data-premium-card
-                className="flex flex-col justify-between border border-[#ff8f2b]/25 bg-[#557da5] p-7 text-white shadow-[0_24px_80px_rgba(36,71,102,0.24)] sm:p-10"
+                className="flex flex-col justify-between border border-[#ff6b00]/25 bg-[#12396f] p-7 text-white shadow-[0_24px_80px_rgba(11,45,89,0.24)] sm:p-10"
               >
                 <div>
-                  <p className="text-xs font-semibold uppercase text-[#ffb062]">
+                  <p className="text-xs font-semibold uppercase text-[#ffb466]">
                     {t("jetPump.partnershipTitle")}
                   </p>
                   <p className="mt-6 text-lg leading-8 text-white/78">
@@ -563,13 +563,13 @@ export default async function Home({ params }: Props) {
         <section
           id="safety"
           data-scroll-shell
-          className="relative min-h-[180svh] border-y border-white/10 bg-[#557da5] text-white"
+          className="relative min-h-[180svh] border-y border-white/10 bg-[#12396f] text-white"
         >
           <AmbientMedia
             image={siteMedia.flareStack.image}
             imageAlt={siteMedia.flareStack.alt}
             imageClassName="object-cover object-[78%_center] opacity-14"
-            overlayClassName="bg-[linear-gradient(90deg,rgba(85,125,165,0.92)_0%,rgba(54,95,132,0.82)_50%,rgba(36,71,102,0.82)_100%)]"
+            overlayClassName="bg-[linear-gradient(90deg,rgba(18,57,111,0.92)_0%,rgba(26,78,136,0.82)_50%,rgba(11,45,89,0.82)_100%)]"
           />
           <div
             data-scroll-panel
@@ -578,7 +578,7 @@ export default async function Home({ params }: Props) {
             <div className="mx-auto max-w-7xl">
               <div className="grid gap-6 md:grid-cols-3">
                 <div data-scroll-copy className="md:col-span-2">
-                  <p className="text-xs font-semibold uppercase text-[#ffb062]">
+                  <p className="text-xs font-semibold uppercase text-[#ffb466]">
                     {t("safety.eyebrow")}
                   </p>
                   <h2 className="mt-4 max-w-4xl text-3xl font-semibold leading-tight sm:text-6xl">
@@ -599,7 +599,7 @@ export default async function Home({ params }: Props) {
                     data-premium-card
                     className="border border-white/10 bg-white/[0.03] p-6 backdrop-blur-sm"
                   >
-                    <p className="text-sm font-semibold uppercase text-[#a38356]">
+                    <p className="text-sm font-semibold uppercase text-[#ff9a46]">
                       {item.title}
                     </p>
                     <p className="mt-4 text-sm leading-6 text-white/68">
@@ -614,14 +614,14 @@ export default async function Home({ params }: Props) {
 
         <section
           id="contact"
-          className="bg-white px-5 py-14 text-[#17334d] sm:px-8 lg:px-10"
+          className="bg-white px-5 py-14 text-[#0a203d] sm:px-8 lg:px-10"
         >
           <div
             data-section-reveal
-            className="mx-auto flex max-w-7xl flex-col gap-6 border-l-4 border-[#a38356] pl-6 sm:flex-row sm:items-center sm:justify-between"
+            className="mx-auto flex max-w-7xl flex-col gap-6 border-l-4 border-[#ff9a46] pl-6 sm:flex-row sm:items-center sm:justify-between"
           >
             <div>
-              <p className="text-xs font-semibold uppercase text-[#557da5]">
+              <p className="text-xs font-semibold uppercase text-[#12396f]">
                 {t("contact.eyebrow")}
               </p>
               <h2 className="mt-3 text-3xl font-semibold">
@@ -630,7 +630,7 @@ export default async function Home({ params }: Props) {
             </div>
             <Link
               href={getLocalizedPath(locale as Locale, "/contact")}
-              className="premium-button inline-flex min-h-12 items-center justify-center bg-[linear-gradient(135deg,#557da5_0%,#ff8f2b_130%)] px-6 text-sm font-semibold text-white transition hover:bg-[#ff8f2b] hover:text-white"
+              className="premium-button inline-flex min-h-12 items-center justify-center bg-[linear-gradient(135deg,#12396f_0%,#ff6b00_130%)] px-6 text-sm font-semibold text-white transition hover:bg-[#ff6b00] hover:text-white"
               data-cursor-label={t("nav.cta")}
               data-magnetic
             >

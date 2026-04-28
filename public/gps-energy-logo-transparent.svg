@@ -1,0 +1,112 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1280 1191"
+  width="1280"
+  height="1191"
+  role="img"
+  aria-label="GPS Energy"
+>
+  <title>GPS Energy</title>
+  <defs>
+    <linearGradient id="gps-navy" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b3a68" />
+      <stop offset="1" stop-color="#042a54" />
+    </linearGradient>
+    <linearGradient id="gps-orange" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ff7c12" />
+      <stop offset=".58" stop-color="#ff6306" />
+      <stop offset="1" stop-color="#f05200" />
+    </linearGradient>
+    <filter id="gps-soft-shadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#061d38" flood-opacity=".28" />
+    </filter>
+    <filter id="gps-orange-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#ff6b00" flood-opacity=".22" />
+    </filter>
+    <mask id="gps-gear-mask">
+      <rect width="1280" height="1191" fill="#000" />
+      <g fill="#fff" transform="translate(655 410)">
+        <circle r="305" />
+        <rect x="-64" y="-380" width="128" height="126" rx="18" />
+        <rect x="-64" y="-380" width="128" height="126" rx="18" transform="rotate(45)" />
+        <rect x="-64" y="-380" width="128" height="126" rx="18" transform="rotate(-45)" />
+        <rect x="-64" y="-380" width="128" height="126" rx="18" transform="rotate(90)" />
+        <rect x="-64" y="-380" width="128" height="126" rx="18" transform="rotate(-90)" />
+        <rect x="-64" y="-380" width="128" height="126" rx="18" transform="rotate(135)" />
+        <rect x="-64" y="-380" width="128" height="126" rx="18" transform="rotate(-135)" />
+      </g>
+      <circle cx="655" cy="410" r="240" fill="#000" />
+      <path
+        fill="#000"
+        d="M477 636h356v107H477z"
+      />
+    </mask>
+  </defs>
+
+  <g filter="url(#gps-soft-shadow)">
+    <rect width="1280" height="760" fill="url(#gps-navy)" mask="url(#gps-gear-mask)" />
+
+    <path
+      fill="url(#gps-navy)"
+      fill-rule="evenodd"
+      d="M563 378 L579 349 L811 474 L801 500 L789 504 L789 542 L770 544 L768 492 L672 442 L717 612 L720 620 L738 622 L738 642 L564 642 L564 622 L581 619 L583 614 L621 464 L626 435 L619 427 L622 418 L620 413 L568 386 L563 382 Z
+         M605 599 L605 602 L610 600 L639 569 L619 547 L617 547 Z
+         M614 618 L615 620 L689 619 L652 580 Z
+         M627 530 L628 535 L649 557 L652 557 L674 533 L674 530 Z
+         M628 509 L629 513 L671 512 L660 466 L652 447 L645 447 L642 450 Z
+         M663 566 L665 574 L695 602 L682 548 Z"
+    />
+  </g>
+
+  <g filter="url(#gps-orange-shadow)">
+    <path
+      fill="url(#gps-orange)"
+      fill-rule="evenodd"
+      d="M445 717 L488 694 L528 680 L576 668 L632 661 L696 662 L748 670 L808 688 L863 715 L863 717 L859 717 L808 704 L760 697 L688 692 L640 692 L541 698 L475 710 L450 718 Z
+         M494 384 L496 365 L502 345 L519 315 L535 299 L550 288 L574 279 L585 282 L587 286 L586 312 L578 349 L562 378 L562 382 L560 382 L523 436 L513 444 L502 440 L495 416 Z"
+    />
+  </g>
+
+  <g
+    filter="url(#gps-soft-shadow)"
+    font-family="Eurostile Extended, Microgramma D Extended, BankGothic Md BT, Arial Black, Arial, sans-serif"
+    font-weight="900"
+    letter-spacing=".04em"
+  >
+    <text
+      x="143"
+      y="918"
+      fill="url(#gps-navy)"
+      font-size="143"
+      textLength="330"
+      lengthAdjust="spacingAndGlyphs"
+    >GPS</text>
+    <text
+      x="551"
+      y="918"
+      fill="url(#gps-orange)"
+      font-size="143"
+      textLength="650"
+      lengthAdjust="spacingAndGlyphs"
+    >ENERGY</text>
+  </g>
+
+  <g filter="url(#gps-soft-shadow)">
+    <text
+      x="640"
+      y="1018"
+      fill="url(#gps-navy)"
+      font-family="Eurostile Extended, Microgramma D Extended, BankGothic Md BT, Arial Black, Arial, sans-serif"
+      font-size="49"
+      font-weight="800"
+      letter-spacing=".18em"
+      text-anchor="middle"
+      textLength="750"
+      lengthAdjust="spacingAndGlyphs"
+    >ENERGIE &amp; INNOVATION</text>
+  </g>
+  <g fill="#ffad72">
+    <rect x="144" y="994" width="118" height="7" rx="3.5" />
+    <rect x="1070" y="994" width="118" height="7" rx="3.5" />
+  </g>
+</svg>

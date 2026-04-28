@@ -104,7 +104,7 @@ export function buildOrganizationJsonLd(locale: Locale) {
     "@id": `${siteConfig.url}#organization`,
     name: siteConfig.name,
     url: siteConfig.url,
-    logo: getAbsoluteUrl("/gps-energy-logo-premium.svg"),
+    logo: getAbsoluteUrl("/gps-energy-logo-transparent.svg"),
     image: getAbsoluteUrl(siteConfig.ogImage),
     description: siteConfig.description[locale],
     foundingDate: "2021",

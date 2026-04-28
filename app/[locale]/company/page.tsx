@@ -71,7 +71,7 @@ export default async function CompanyPage({ params }: Props) {
       <HomeAnimations />
       <JsonLd data={pageJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
-      <main className="overflow-hidden bg-[#557da5] text-white">
+      <main className="overflow-hidden bg-[#12396f] text-white">
         <SiteHeader currentPath="/company" locale={locale} page="company" />
         <PageHero
           backgroundMedia="roughnecks"
@@ -85,7 +85,7 @@ export default async function CompanyPage({ params }: Props) {
           ]}
         />
 
-        <section className="bg-[#e7eff6] px-5 py-18 text-[#17334d] sm:px-8 lg:px-10">
+        <section className="bg-[#edf3fa] px-5 py-18 text-[#0a203d] sm:px-8 lg:px-10">
           <div className="mx-auto max-w-7xl">
             <div className="grid gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
               <div
@@ -93,7 +93,7 @@ export default async function CompanyPage({ params }: Props) {
                 data-reveal-from="left"
                 className="max-w-3xl"
               >
-                <p className="text-xs font-semibold uppercase text-[#557da5]">
+                <p className="text-xs font-semibold uppercase text-[#12396f]">
                   {homeT("companyBand.eyebrow")}
                 </p>
                 <h2 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl">
@@ -121,7 +121,7 @@ export default async function CompanyPage({ params }: Props) {
                   data-reveal-from={index % 2 === 0 ? "left" : "right"}
                   className="border border-black/10 bg-white p-6 shadow-sm"
                 >
-                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#557da5]">
+                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#12396f]">
                     {item.label}
                   </p>
                   <h3 className="mt-5 text-3xl font-semibold">{item.value}</h3>
@@ -134,10 +134,10 @@ export default async function CompanyPage({ params }: Props) {
           </div>
         </section>
 
-        <section className="bg-white px-5 py-18 text-[#17334d] sm:px-8 lg:px-10">
+        <section className="bg-white px-5 py-18 text-[#0a203d] sm:px-8 lg:px-10">
           <div className="mx-auto max-w-7xl">
             <div data-section-reveal data-reveal-from="left" className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase text-[#a38356]">
+              <p className="text-xs font-semibold uppercase text-[#ff9a46]">
                 {pageT("model.eyebrow")}
               </p>
               <h2 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl">
@@ -151,7 +151,7 @@ export default async function CompanyPage({ params }: Props) {
                   data-section-reveal
                   data-premium-card
                   data-reveal-from={index % 2 === 0 ? "left" : "right"}
-                  className="border border-black/10 bg-[#f3f7fb] p-7 shadow-sm"
+                  className="border border-black/10 bg-[#f5f8fc] p-7 shadow-sm"
                 >
                   <h3 className="text-2xl font-semibold">{item.title}</h3>
                   <p className="mt-4 text-sm leading-7 text-[#546273]">
@@ -163,10 +163,10 @@ export default async function CompanyPage({ params }: Props) {
           </div>
         </section>
 
-        <section className="border-y border-white/10 bg-[#365f84] px-5 py-18 text-white sm:px-8 lg:px-10">
+        <section className="border-y border-white/10 bg-[#0f3f74] px-5 py-18 text-white sm:px-8 lg:px-10">
           <div className="mx-auto max-w-7xl">
             <div data-section-reveal data-reveal-from="left" className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase text-[#a38356]">
+              <p className="text-xs font-semibold uppercase text-[#ff9a46]">
                 {pageT("reasons.eyebrow")}
               </p>
               <h2 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl">

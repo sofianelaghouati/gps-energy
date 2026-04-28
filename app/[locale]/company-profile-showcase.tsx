@@ -319,13 +319,13 @@ export function CompanyProfileShowcase({
       <div
         data-tilt-panel
         data-cursor-label="Tilt"
-        className="relative min-h-[460px] overflow-hidden border border-white/14 bg-[linear-gradient(135deg,#244766_0%,#365f84_24%,#557da5_52%,#5f83a8_76%,#ff8f2b_135%)] p-5 shadow-[0_36px_100px_rgba(36,71,102,0.28)] [transform-style:preserve-3d] sm:p-7"
+        className="relative min-h-[460px] overflow-hidden border border-white/14 bg-[linear-gradient(135deg,#0b2d59_0%,#12396f_28%,#1a4e88_56%,#275f9e_78%,#ff6b00_142%)] p-5 shadow-[0_36px_100px_rgba(11,45,89,0.3)] [transform-style:preserve-3d] sm:p-7"
       >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_var(--tilt-focus-x)_var(--tilt-focus-y),rgba(255,255,255,0.2),transparent_23%),linear-gradient(135deg,rgba(255,255,255,0.12),transparent_40%),linear-gradient(180deg,rgba(255,255,255,0.08),rgba(36,71,102,0.22))]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_16%_80%,rgba(163,131,86,0.2),transparent_26%),radial-gradient(circle_at_74%_18%,rgba(255,143,43,0.22),transparent_24%),radial-gradient(circle_at_84%_12%,rgba(255,255,255,0.12),transparent_22%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_var(--tilt-focus-x)_var(--tilt-focus-y),rgba(255,255,255,0.24),transparent_23%),linear-gradient(135deg,rgba(255,255,255,0.14),transparent_40%),linear-gradient(180deg,rgba(255,255,255,0.08),rgba(11,45,89,0.22))]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_16%_80%,rgba(255,180,102,0.18),transparent_26%),radial-gradient(circle_at_74%_18%,rgba(255,107,0,0.24),transparent_24%),radial-gradient(circle_at_84%_12%,rgba(255,255,255,0.12),transparent_22%)]" />
         <div className="absolute inset-0 opacity-45 [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:42px_42px]" />
         <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-white/65 to-transparent" />
-        <div className="absolute bottom-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-[#ff8f2b]/85 to-transparent" />
+        <div className="absolute bottom-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-[#ff6b00]/85 to-transparent" />
         <div
           data-tilt-glare
           className="pointer-events-none absolute -inset-[18%] opacity-0 mix-blend-screen"
@@ -338,7 +338,7 @@ export function CompanyProfileShowcase({
         />
         <div
           data-premium-sweep-loop
-          className="absolute bottom-[24%] left-[-15%] h-[2px] w-[60%] bg-gradient-to-r from-transparent via-[#ff8f2b] to-transparent opacity-45"
+          className="absolute bottom-[24%] left-[-15%] h-[2px] w-[60%] bg-gradient-to-r from-transparent via-[#ff6b00] to-transparent opacity-45"
         />
         <div
           data-premium-pulse-loop
@@ -346,7 +346,7 @@ export function CompanyProfileShowcase({
         />
         <div
           data-premium-pulse-loop
-          className="absolute right-[22%] top-[40%] h-2.5 w-2.5 rounded-full bg-[#ff8f2b]/85 shadow-[0_0_18px_rgba(255,143,43,0.4)]"
+          className="absolute right-[22%] top-[40%] h-2.5 w-2.5 rounded-full bg-[#ff6b00]/85 shadow-[0_0_18px_rgba(255,107,0,0.4)]"
         />
         <div
           data-premium-pulse-loop
@@ -362,10 +362,10 @@ export function CompanyProfileShowcase({
             <p className="text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-white/66">
               {eyebrow}
             </p>
-            <div className="mt-4 h-px w-16 bg-[#ff8f2b]" />
+            <div className="mt-4 h-px w-16 bg-[#ff6b00]" />
           </div>
-          <div className="w-[6.5rem] shrink-0 sm:w-[7.5rem]">
-            <BrandLogo className="h-auto w-full opacity-94" />
+          <div className="w-[6rem] shrink-0 sm:w-[7rem]">
+            <BrandLogo className="h-auto w-full opacity-100" framed />
           </div>
         </div>
 
@@ -391,7 +391,7 @@ export function CompanyProfileShowcase({
           data-tilt-layer
           data-depth="96"
           data-premium-flair-loop
-          className="absolute right-[12%] top-[22%] h-14 w-14 rotate-45 border border-[#ff8f2b]/55 bg-[#ff8f2b]/10 shadow-[0_0_30px_rgba(255,143,43,0.18)] sm:h-20 sm:w-20"
+          className="absolute right-[12%] top-[22%] h-14 w-14 rotate-45 border border-[#ff6b00]/55 bg-[#ff6b00]/10 shadow-[0_0_30px_rgba(255,107,0,0.2)] sm:h-20 sm:w-20"
         />
         <div
           data-tilt-layer
@@ -403,13 +403,13 @@ export function CompanyProfileShowcase({
           data-tilt-layer
           data-depth="68"
           data-premium-flair-loop
-          className="absolute bottom-[24%] right-[25%] h-16 w-16 rounded-full border border-[#ff8f2b]/40 sm:h-24 sm:w-24"
+          className="absolute bottom-[24%] right-[25%] h-16 w-16 rounded-full border border-[#ff6b00]/40 sm:h-24 sm:w-24"
         />
         <div
           data-tilt-layer
           data-depth="90"
           data-premium-flair-loop
-          className="absolute left-[12%] top-[62%] h-28 w-28 rounded-full bg-[#ff8f2b]/10 blur-2xl sm:h-36 sm:w-36"
+          className="absolute left-[12%] top-[62%] h-28 w-28 rounded-full bg-[#ff6b00]/12 blur-2xl sm:h-36 sm:w-36"
         />
         <div
           data-tilt-layer
@@ -431,7 +431,7 @@ export function CompanyProfileShowcase({
           <p className="text-sm leading-7 text-white/78">{copy}</p>
           <div className="mt-5 flex items-center gap-3">
             <span className="h-px flex-1 bg-white/14" />
-            <span className="text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-[#d7e6f4]">
+            <span className="text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-[#dbe8f5]">
               precise execution
             </span>
           </div>
@@ -440,9 +440,9 @@ export function CompanyProfileShowcase({
         <div
           data-tilt-layer
           data-depth="72"
-          className="absolute bottom-5 right-5 w-[38%] min-w-[210px] border border-white/14 bg-[#244766]/60 p-4 shadow-[0_24px_60px_rgba(12,28,47,0.32)] backdrop-blur-xl sm:bottom-7 sm:right-7 sm:p-5"
+          className="absolute bottom-5 right-5 w-[38%] min-w-[210px] border border-white/14 bg-[#0b2d59]/62 p-4 shadow-[0_24px_60px_rgba(7,20,41,0.34)] backdrop-blur-xl sm:bottom-7 sm:right-7 sm:p-5"
         >
-          <p className="text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-[#d7e6f4]">
+          <p className="text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-[#dbe8f5]">
             operational snapshot
           </p>
           <div className="mt-4 grid gap-3">

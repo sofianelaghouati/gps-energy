@@ -425,16 +425,16 @@ export function HomeAnimations() {
         const isInteractive = Boolean(target);
 
         gsap.to(cursorRing, {
-          backgroundColor: isInteractive ? "rgba(255,143,43,0.18)" : "rgba(255,255,255,0.05)",
-          borderColor: isInteractive ? "rgba(255,208,166,0.82)" : "rgba(163,131,86,0.62)",
+          backgroundColor: isInteractive ? "rgba(255,107,0,0.18)" : "rgba(255,255,255,0.05)",
+          borderColor: isInteractive ? "rgba(255,210,170,0.82)" : "rgba(255,152,72,0.68)",
           boxShadow: isInteractive
-            ? "0 0 44px rgba(255,143,43,0.34), 0 0 88px rgba(85,125,165,0.24)"
-            : "0 0 30px rgba(85,125,165,0.2), 0 0 40px rgba(255,143,43,0.12)",
+            ? "0 0 44px rgba(255,107,0,0.34), 0 0 88px rgba(18,57,111,0.24)"
+            : "0 0 30px rgba(18,57,111,0.22), 0 0 40px rgba(255,107,0,0.14)",
           duration: 0.22,
           ease: "power3.out",
         });
         gsap.to(cursorCore, {
-          backgroundColor: isInteractive ? "#ffffff" : "#ff8f2b",
+          backgroundColor: isInteractive ? "#ffffff" : "#ff6b00",
           duration: 0.2,
           ease: "power3.out",
         });

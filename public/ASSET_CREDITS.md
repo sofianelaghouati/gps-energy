@@ -8,5 +8,4 @@
 - Sahara image: "Dunes at Tassili n'Ajjer.jpg" by Dagelf, licensed under CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Dunes_at_Tassili_n%27Ajjer.jpg
 - Sahara image: "Le chameau et la grande dune.jpg" by Eagleyes*, licensed under CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Le_chameau_et_la_grande_dune.jpg
 - Sahara image: "Algerian desert, Hassi Messaoud.jpg" by Hayet mss, licensed under CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Algerian_desert,_Hassi_Messaoud.jpg
-- GPS Energy premium logo: recreated as a responsive web SVG from the visual reference provided by the project owner, using the same blue, white and bronze identity across the site.
-- GPS Energy legacy logo: provided by the project owner.
+- GPS Energy transparent logo: provided by the project owner and used as the site logo SVG.

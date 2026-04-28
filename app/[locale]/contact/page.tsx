@@ -59,7 +59,7 @@ export default async function ContactPage({ params }: Props) {
       <HomeAnimations />
       <JsonLd data={pageJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
-      <main className="overflow-hidden bg-[#557da5] text-white">
+      <main className="overflow-hidden bg-[#12396f] text-white">
         <SiteHeader currentPath="/contact" locale={locale} page="contact" />
         <PageHero
           backgroundMedia="hero"
@@ -73,7 +73,7 @@ export default async function ContactPage({ params }: Props) {
           ]}
         />
 
-        <section className="bg-[#e7eff6] px-5 py-18 text-[#17334d] sm:px-8 lg:px-10">
+        <section className="bg-[#edf3fa] px-5 py-18 text-[#0a203d] sm:px-8 lg:px-10">
           <div className="mx-auto grid max-w-7xl gap-4 lg:grid-cols-3">
             <article
               data-section-reveal
@@ -81,12 +81,12 @@ export default async function ContactPage({ params }: Props) {
               data-reveal-from="left"
               className="border border-black/10 bg-white p-7 shadow-sm"
             >
-              <p className="text-xs font-semibold uppercase text-[#557da5]">
+              <p className="text-xs font-semibold uppercase text-[#12396f]">
                 {cards[0]?.title}
               </p>
               <a
                 href={`mailto:${homeT("contact.email")}`}
-                className="mt-5 block text-2xl font-semibold text-[#17334d] hover:text-[#a38356]"
+                className="mt-5 block text-2xl font-semibold text-[#0a203d] hover:text-[#ff9a46]"
               >
                 {homeT("contact.email")}
               </a>
@@ -101,10 +101,10 @@ export default async function ContactPage({ params }: Props) {
               data-reveal-from="right"
               className="border border-black/10 bg-white p-7 shadow-sm"
             >
-              <p className="text-xs font-semibold uppercase text-[#557da5]">
+              <p className="text-xs font-semibold uppercase text-[#12396f]">
                 {cards[1]?.title}
               </p>
-              <p className="mt-5 text-2xl font-semibold text-[#17334d]">Algeria</p>
+              <p className="mt-5 text-2xl font-semibold text-[#0a203d]">Algeria</p>
               <p className="mt-4 text-sm leading-7 text-[#546273]">
                 {cards[1]?.copy}
               </p>
@@ -116,14 +116,14 @@ export default async function ContactPage({ params }: Props) {
               data-reveal-from="left"
               className="border border-black/10 bg-white p-7 shadow-sm"
             >
-              <p className="text-xs font-semibold uppercase text-[#557da5]">
+              <p className="text-xs font-semibold uppercase text-[#12396f]">
                 {cards[2]?.title}
               </p>
               <a
                 href="https://www.linkedin.com/company/gps-energy-dz"
                 target="_blank"
                 rel="noreferrer"
-                className="mt-5 block text-2xl font-semibold text-[#17334d] hover:text-[#a38356]"
+                className="mt-5 block text-2xl font-semibold text-[#0a203d] hover:text-[#ff9a46]"
               >
                 GPS ENERGY
               </a>
@@ -134,10 +134,10 @@ export default async function ContactPage({ params }: Props) {
           </div>
         </section>
 
-        <section className="border-y border-white/10 bg-[#365f84] px-5 py-18 text-white sm:px-8 lg:px-10">
+        <section className="border-y border-white/10 bg-[#0f3f74] px-5 py-18 text-white sm:px-8 lg:px-10">
           <div className="mx-auto max-w-7xl">
             <div data-section-reveal data-reveal-from="left" className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase text-[#a38356]">
+              <p className="text-xs font-semibold uppercase text-[#ff9a46]">
                 {pageT("topics.eyebrow")}
               </p>
               <h2 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl">

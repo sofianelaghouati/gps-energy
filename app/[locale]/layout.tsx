@@ -56,7 +56,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#557da5",
+  themeColor: "#12396f",
 };
 
 export const dynamic = "error";
@@ -89,7 +89,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       data-scroll-behavior="smooth"
       className={`${gpsSans.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="min-h-full bg-[#557da5] text-white">
+      <body className="min-h-full bg-[#12396f] text-white">
         <JsonLd data={organizationJsonLd} />
         <JsonLd data={websiteJsonLd} />
         {children}
