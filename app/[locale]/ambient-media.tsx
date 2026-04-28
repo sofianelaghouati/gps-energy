@@ -2,6 +2,7 @@ import Image, { type StaticImageData } from "next/image";
 
 type Props = {
   className?: string;
+  heroMedia?: boolean;
   image: StaticImageData;
   imageAlt?: string;
   imageClassName?: string;
@@ -14,6 +15,7 @@ type Props = {
 
 export function AmbientMedia({
   className = "",
+  heroMedia = false,
   image,
   imageAlt = "",
   imageClassName = "",
@@ -26,6 +28,7 @@ export function AmbientMedia({
   return (
     <div
       aria-hidden="true"
+      data-hero-media={heroMedia ? "" : undefined}
       className={`pointer-events-none absolute inset-0 overflow-hidden ${className}`}
     >
       <Image

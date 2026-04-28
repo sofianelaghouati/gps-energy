@@ -13,7 +13,6 @@ import {
 import type { Locale } from "@/i18n/routing";
 import { AmbientMedia } from "./ambient-media";
 import { HomeAnimations } from "./home-animations";
-import { HeroOilScene } from "./hero-oil-scene";
 import { JsonLd } from "./json-ld";
 import { SaharaMapShowcase } from "./sahara-map-showcase";
 import { SiteFooter } from "./site-footer";
@@ -206,10 +205,17 @@ export default async function Home({ params }: Props) {
           data-hero
           className="relative isolate min-h-[92svh] border-b border-white/10"
         >
-          <HeroOilScene />
+          <AmbientMedia
+            heroMedia
+            image={siteMedia.unsplashOilfieldRig.image}
+            imageAlt={siteMedia.unsplashOilfieldRig.alt}
+            preload
+            imageClassName="object-cover object-[62%_center] opacity-72 saturate-[1.08]"
+            overlayClassName="bg-[linear-gradient(90deg,rgba(18,57,111,0.62)_0%,rgba(18,57,111,0.34)_46%,rgba(11,45,89,0.1)_100%)]"
+          />
           <div className="premium-hero-grid" />
           <div className="premium-hero-sheen" />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(18,57,111,0.86)_0%,rgba(18,57,111,0.54)_46%,rgba(11,45,89,0.12)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(18,57,111,0.8)_0%,rgba(18,57,111,0.46)_46%,rgba(11,45,89,0.08)_100%)]" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_76%_28%,rgba(255,107,0,0.16),transparent_24%),radial-gradient(circle_at_58%_16%,rgba(255,180,102,0.1),transparent_20%),radial-gradient(circle_at_28%_72%,rgba(248,251,255,0.06),transparent_28%)]" />
           <SiteHeader currentPath="/" locale={locale} page="home" overlay />
           <div className="relative z-10 mx-auto flex min-h-[92svh] max-w-7xl items-end px-5 pb-12 pt-32 sm:px-8 sm:pb-16 lg:px-10">
@@ -305,41 +311,54 @@ export default async function Home({ params }: Props) {
               <aside
                 data-hero-reveal
                 data-reveal-from="right"
-                className="border-l border-white/16 pl-5 text-white/78 sm:pl-7 lg:border lg:border-white/12 lg:bg-white/[0.045] lg:p-6 lg:shadow-[0_24px_80px_rgba(0,0,0,0.35)] lg:backdrop-blur-md"
+                className="overflow-hidden border border-white/12 bg-white/[0.06] text-white/78 shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-md"
               >
-                <div
-                  data-vertical-line
-                  className="mb-6 h-20 w-px bg-gradient-to-b from-[#ff6b00] via-[#ffb466] to-[#12396f]"
-                />
-                <p className="max-w-sm text-sm leading-6">
-                  {t("hero.sideCopy")}
-                </p>
-                <dl className="mt-7 grid grid-cols-3 gap-3">
-                  <div>
-                    <dt className="text-2xl font-semibold text-white">
-                      {t("hero.stats.founded.value")}
-                    </dt>
-                    <dd className="mt-1 text-[0.68rem] uppercase text-white/55">
-                      {t("hero.stats.founded.label")}
-                    </dd>
-                  </div>
-                  <div>
-                    <dt className="text-2xl font-semibold text-white">
-                      {t("hero.stats.iso.value")}
-                    </dt>
-                    <dd className="mt-1 text-[0.68rem] uppercase text-white/55">
-                      {t("hero.stats.iso.label")}
-                    </dd>
-                  </div>
-                  <div>
-                    <dt className="text-2xl font-semibold text-white">
-                      {t("hero.stats.market.value")}
-                    </dt>
-                    <dd className="mt-1 text-[0.68rem] uppercase text-white/55">
-                      {t("hero.stats.market.label")}
-                    </dd>
-                  </div>
-                </dl>
+                <div className="relative h-36 border-b border-white/12 bg-white/[0.055]">
+                  <Image
+                    src={siteMedia.oilWellheadChristmasTree.image}
+                    alt=""
+                    fill
+                    placeholder="blur"
+                    sizes="(min-width: 1024px) 320px, 90vw"
+                    className="object-cover object-[58%_center] opacity-84 saturate-[1.08]"
+                  />
+                  <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(18,57,111,0.18)_0%,transparent_52%,rgba(255,107,0,0.16)_100%)]" />
+                </div>
+                <div className="p-5 sm:p-6">
+                  <div
+                    data-vertical-line
+                    className="mb-5 h-px w-16 bg-gradient-to-r from-[#ff6b00] via-[#ffb466] to-transparent"
+                  />
+                  <p className="max-w-sm text-sm leading-6">
+                    {t("hero.sideCopy")}
+                  </p>
+                  <dl className="mt-7 grid grid-cols-3 gap-3">
+                    <div>
+                      <dt className="text-2xl font-semibold text-white">
+                        {t("hero.stats.founded.value")}
+                      </dt>
+                      <dd className="mt-1 text-[0.68rem] uppercase text-white/55">
+                        {t("hero.stats.founded.label")}
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="text-2xl font-semibold text-white">
+                        {t("hero.stats.iso.value")}
+                      </dt>
+                      <dd className="mt-1 text-[0.68rem] uppercase text-white/55">
+                        {t("hero.stats.iso.label")}
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="text-2xl font-semibold text-white">
+                        {t("hero.stats.market.value")}
+                      </dt>
+                      <dd className="mt-1 text-[0.68rem] uppercase text-white/55">
+                        {t("hero.stats.market.label")}
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
               </aside>
             </div>
           </div>

@@ -27,8 +27,8 @@ export async function SiteHeader({
 }: Props) {
   const t = await getTranslations("HomePage");
   const wrapperClass = overlay
-    ? "absolute inset-x-0 top-0 z-30 border-b border-white/10 bg-[#12396f]/76 backdrop-blur-md"
-    : "sticky top-0 z-30 border-b border-white/10 bg-[#12396f]/96 backdrop-blur-md";
+    ? "absolute inset-x-0 top-0 z-30 border-b border-black/10 bg-[#ffffff]"
+    : "sticky top-0 z-30 border-b border-black/10 bg-[#ffffff]";
 
   return (
     <div className={wrapperClass}>
@@ -51,7 +51,7 @@ export async function SiteHeader({
         </Link>
 
         <nav
-          className="hidden items-center gap-7 text-sm uppercase tracking-[0.08em] text-white/74 md:flex"
+          className="hidden items-center gap-7 text-sm font-semibold uppercase tracking-[0.08em] text-[#0b2d59]/70 md:flex"
           aria-label={t("nav.aria")}
         >
           {navItems.map((item) => {
@@ -62,7 +62,7 @@ export async function SiteHeader({
                 key={item.href}
                 href={getLocalizedPath(locale as Locale, item.href)}
                 className={`transition ${
-                  active ? "text-white" : "hover:text-white"
+                  active ? "text-[#0b2d59]" : "hover:text-[#ff6b00]"
                 }`}
                 data-cursor-label={t(item.labelKey)}
                 data-magnetic
@@ -76,7 +76,7 @@ export async function SiteHeader({
 
         <div className="hidden items-center gap-3 md:flex">
           <div
-            className="flex items-center border border-white/15 bg-white/7 text-xs font-medium uppercase tracking-[0.12em]"
+            className="flex items-center border border-black/10 bg-[#edf3fa] text-xs font-semibold uppercase tracking-[0.12em]"
             aria-label={t("nav.language")}
           >
             {(["en", "fr"] as const).map((item) => (
@@ -85,8 +85,8 @@ export async function SiteHeader({
                 href={getLocalizedPath(item, currentPath === "/" ? "" : currentPath)}
                 className={`px-3 py-2 transition ${
                   locale === item
-                    ? "bg-white text-[#0b2d59]"
-                    : "text-white/65 hover:text-white"
+                    ? "bg-[#0b2d59] text-white"
+                    : "text-[#0b2d59]/62 hover:text-[#ff6b00]"
                 }`}
                 data-cursor-label={item.toUpperCase()}
                 data-magnetic
@@ -97,7 +97,7 @@ export async function SiteHeader({
           </div>
           <Link
             href={getLocalizedPath(locale as Locale, "/contact")}
-            className="premium-button bg-[linear-gradient(135deg,#ffb466_0%,#ff6b00_100%)] px-5 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-white transition hover:bg-white hover:text-[#0b2d59]"
+            className="premium-button bg-[linear-gradient(135deg,#ffb466_0%,#ff6b00_100%)] px-5 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-white shadow-[0_12px_26px_rgba(255,107,0,0.22)] transition hover:shadow-[0_16px_34px_rgba(255,107,0,0.3)]"
             data-cursor-label={t("nav.cta")}
             data-magnetic
           >
@@ -107,7 +107,7 @@ export async function SiteHeader({
 
         <details className="mobile-menu-trigger group fixed right-5 top-4 z-[60] flex">
           <summary
-            className="flex h-11 w-11 cursor-pointer list-none items-center justify-center border border-white/20 bg-[linear-gradient(135deg,#ffb466_0%,#ff6b00_100%)] shadow-[0_14px_34px_rgba(11,45,89,0.34)]"
+            className="flex h-11 w-11 cursor-pointer list-none items-center justify-center border border-black/10 bg-[linear-gradient(135deg,#ffb466_0%,#ff6b00_100%)] shadow-[0_14px_34px_rgba(11,45,89,0.2)]"
             data-cursor-label="Menu"
             aria-label={t("nav.mobile")}
           >
@@ -118,7 +118,7 @@ export async function SiteHeader({
               <span className="block h-px w-5 bg-white" />
             </span>
           </summary>
-          <div className="absolute right-0 mt-3 w-[min(86vw,320px)] border border-white/12 bg-[#0b2d59]/98 p-4 shadow-2xl shadow-black/40 backdrop-blur-xl">
+          <div className="absolute right-0 mt-3 w-[min(86vw,320px)] border border-black/10 bg-[#ffffff] p-4 shadow-2xl shadow-black/18">
             <div className="grid gap-2">
               {navItems.map((item) => (
                 <Link
@@ -126,8 +126,8 @@ export async function SiteHeader({
                   href={getLocalizedPath(locale as Locale, item.href)}
                   className={`border px-4 py-3 text-sm uppercase tracking-[0.08em] ${
                     page === item.key
-                      ? "border-white/18 bg-white/8 text-white"
-                      : "border-white/8 text-white/78"
+                      ? "border-[#ff6b00]/24 bg-[#fff4eb] font-semibold text-[#0b2d59]"
+                      : "border-black/10 text-[#0b2d59]/74"
                   }`}
                   data-magnetic
                 >
@@ -136,11 +136,11 @@ export async function SiteHeader({
               ))}
             </div>
             <div className="mt-4 flex items-center justify-between gap-3">
-              <div className="flex border border-white/10 text-xs uppercase tracking-[0.12em]">
+              <div className="flex border border-black/10 bg-[#edf3fa] text-xs font-semibold uppercase tracking-[0.12em]">
                 <Link
                   href={getLocalizedPath("en", currentPath === "/" ? "" : currentPath)}
                   className={`px-3 py-2 ${
-                    locale === "en" ? "bg-white text-[#0b2d59]" : "text-white/65"
+                    locale === "en" ? "bg-[#0b2d59] text-white" : "text-[#0b2d59]/62"
                   }`}
                   data-magnetic
                 >
@@ -149,7 +149,7 @@ export async function SiteHeader({
                 <Link
                   href={getLocalizedPath("fr", currentPath === "/" ? "" : currentPath)}
                   className={`px-3 py-2 ${
-                    locale === "fr" ? "bg-white text-[#0b2d59]" : "text-white/65"
+                    locale === "fr" ? "bg-[#0b2d59] text-white" : "text-[#0b2d59]/62"
                   }`}
                   data-magnetic
                 >

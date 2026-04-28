@@ -9,6 +9,7 @@
 - Oilfield image: "Oil pumpjack in the Permian Basin.jpg" by Quintin Soloviev, licensed under CC BY 4.0. Source: https://commons.wikimedia.org/wiki/File:Oil_pumpjack_in_the_Permian_Basin.jpg
 - Wellhead image: "Oil Well Head with Christmas Tree.jpg" by Kool Cats Photography, licensed under CC BY 2.0. Source: https://commons.wikimedia.org/wiki/File:Oil_Well_Head_with_Christmas_Tree.jpg
 - Wellhead image: "NaturalGasWell.jpg" by Antandrus at English Wikipedia, licensed under CC BY-SA 3.0 / GFDL. Source: https://commons.wikimedia.org/wiki/File:NaturalGasWell.jpg
+- Hero oilfield image: "An oil rig sitting in the middle of a field" by Muhammed Jawad, free to use under the Unsplash License. Source: https://unsplash.com/photos/an-oil-rig-sitting-in-the-middle-of-a-field-nD1_lnWfNu8
 - Sahara image: "Algeria Sahara Desert Photo From Drone 5.jpg" by Fiontain, licensed under CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Algeria_Sahara_Desert_Photo_From_Drone_5.jpg
 - Sahara image: "Dunes at Tassili n'Ajjer.jpg" by Dagelf, licensed under CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Dunes_at_Tassili_n%27Ajjer.jpg
 - Sahara image: "Le chameau et la grande dune.jpg" by Eagleyes*, licensed under CC BY-SA 4.0. Source: https://commons.wikimedia.org/wiki/File:Le_chameau_et_la_grande_dune.jpg

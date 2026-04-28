@@ -26,13 +26,13 @@ export function BrandLogo({
     : "scale-[1.05] -translate-y-[3.5%]";
   const badgeChrome = framed
     ? isFull
-      ? "rounded-[18px] p-2 shadow-[0_18px_36px_rgba(7,20,41,0.2)]"
-      : "rounded-[14px] p-1.5 shadow-[0_14px_28px_rgba(7,20,41,0.18)]"
+      ? "rounded-[18px] p-2"
+      : "rounded-[14px] p-1.5"
     : "";
 
   return (
     <span
-      className={`relative block overflow-hidden bg-white ${badgeChrome} ${className}`}
+      className={`relative block overflow-hidden bg-[#ffffff] ${badgeChrome} ${className}`}
       data-brand-ui="true"
     >
       <Image

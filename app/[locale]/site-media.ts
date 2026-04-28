@@ -11,6 +11,7 @@ import oilPumpjackPermianImage from "@/public/oil-pumpjack-permian-1280.jpg";
 import oilWellheadChristmasTreeImage from "@/public/oil-wellhead-christmas-tree-1280.jpg";
 import roughnecksImage from "@/public/roughnecks-1600.jpg";
 import tassiliDunesImage from "@/public/tassili-dunes-4032.jpg";
+import unsplashOilfieldRigImage from "@/public/unsplash-oilfield-rig-1920.jpg";
 
 export type SiteMediaKey =
   | "hero"
@@ -21,6 +22,7 @@ export type SiteMediaKey =
   | "naturalGasWell"
   | "oilPumpjackPermian"
   | "oilWellheadChristmasTree"
+  | "unsplashOilfieldRig"
   | "saharaDrone"
   | "tassiliDunes"
   | "grandErgCamel"
@@ -63,6 +65,10 @@ export const siteMedia: Record<SiteMediaKey, SiteMediaEntry> = {
   oilWellheadChristmasTree: {
     alt: "Oil wellhead Christmas tree with red valves",
     image: oilWellheadChristmasTreeImage,
+  },
+  unsplashOilfieldRig: {
+    alt: "Oil drilling rig standing in a field under a clear sky",
+    image: unsplashOilfieldRigImage,
   },
   saharaDrone: {
     alt: "Aerial view of dunes in the Algerian Sahara",

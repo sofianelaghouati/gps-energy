@@ -19,37 +19,37 @@ export async function SiteFooter({ locale }: Props) {
   const t = await getTranslations("HomePage");
 
   return (
-    <footer className="bg-[#0b2d59] px-5 py-12 text-white sm:px-8 lg:px-10">
-      <div className="mx-auto grid max-w-7xl gap-8 border-t border-white/10 pt-8 sm:gap-10 sm:pt-10 md:grid-cols-[1.1fr_0.8fr_0.8fr]">
+    <footer className="bg-[#ffffff] px-5 py-12 text-[#0a203d] sm:px-8 lg:px-10">
+      <div className="mx-auto grid max-w-7xl gap-8 border-t border-black/10 pt-8 sm:gap-10 sm:pt-10 md:grid-cols-[1.1fr_0.8fr_0.8fr]">
         <div data-section-reveal className="max-w-md">
           <BrandLogo
             className="h-auto w-[190px] max-w-[78vw] sm:w-[238px]"
             framed
             variant="full"
           />
-          <p className="mt-4 max-w-md text-sm leading-7 text-white/64 sm:mt-5">
+          <p className="mt-4 max-w-md text-sm leading-7 text-[#546273] sm:mt-5">
             {t("footer.summary")}
           </p>
         </div>
 
         <div data-section-reveal>
-          <p className="text-xs font-semibold uppercase text-[#ffb466]">
+          <p className="text-xs font-semibold uppercase text-[#ff6b00]">
             {t("footer.companyTitle")}
           </p>
-          <div className="mt-5 grid gap-3 text-sm text-white/68">
+          <div className="mt-5 grid gap-3 text-sm font-medium text-[#546273]">
             <p>{t("footer.companyItems.private")}</p>
             <p>{t("footer.companyItems.founded")}</p>
             <p>{t("footer.companyItems.market")}</p>
           </div>
-          <p className="mt-8 text-xs font-semibold uppercase text-[#ffb466]">
+          <p className="mt-8 text-xs font-semibold uppercase text-[#ff6b00]">
             {t("footer.linksTitle")}
           </p>
-          <div className="mt-5 grid gap-3 text-sm text-white/68">
+          <div className="mt-5 grid gap-3 text-sm font-medium text-[#546273]">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={getLocalizedPath(locale as Locale, item.href)}
-                className="transition hover:text-white"
+                className="transition hover:text-[#ff6b00]"
                 data-cursor-label={t(item.labelKey)}
                 data-magnetic
                 data-premium-nav
@@ -61,15 +61,15 @@ export async function SiteFooter({ locale }: Props) {
         </div>
 
         <div data-section-reveal>
-          <p className="text-xs font-semibold uppercase text-[#ffb466]">
+          <p className="text-xs font-semibold uppercase text-[#ff6b00]">
             {t("footer.contactTitle")}
           </p>
-          <div className="mt-5 grid gap-4 text-sm text-white/68">
+          <div className="mt-5 grid gap-4 text-sm font-medium text-[#546273]">
             <div>
-              <p className="text-white/40">{t("footer.emailLabel")}</p>
+              <p className="text-[#546273]/70">{t("footer.emailLabel")}</p>
               <a
                 href={`mailto:${t("contact.email")}`}
-                className="mt-1 inline-block text-white transition hover:text-[#ff6b00]"
+                className="mt-1 inline-block text-[#0a203d] transition hover:text-[#ff6b00]"
                 data-cursor-label="Email"
                 data-magnetic
               >
@@ -77,12 +77,12 @@ export async function SiteFooter({ locale }: Props) {
               </a>
             </div>
             <div>
-              <p className="text-white/40">{t("footer.linkedinLabel")}</p>
+              <p className="text-[#546273]/70">{t("footer.linkedinLabel")}</p>
               <a
                 href="https://www.linkedin.com/company/gps-energy-dz"
                 target="_blank"
                 rel="noreferrer"
-                className="mt-1 inline-block text-white transition hover:text-[#ff6b00]"
+                className="mt-1 inline-block text-[#0a203d] transition hover:text-[#ff6b00]"
                 data-cursor-label="LinkedIn"
                 data-magnetic
               >
@@ -92,7 +92,7 @@ export async function SiteFooter({ locale }: Props) {
           </div>
         </div>
       </div>
-      <div className="mx-auto mt-10 max-w-7xl border-t border-white/10 pt-6 text-sm text-white/42">
+      <div className="mx-auto mt-10 max-w-7xl border-t border-black/10 pt-6 text-sm text-[#546273]">
         {t("footer.copyright")}
       </div>
     </footer>
