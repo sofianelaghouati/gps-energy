@@ -36,6 +36,7 @@ export function AmbientMedia({
         alt={imageAlt}
         fill
         preload={preload}
+        fetchPriority={preload ? "high" : undefined}
         placeholder="blur"
         sizes="100vw"
         className={`object-cover ${imageClassName}`}

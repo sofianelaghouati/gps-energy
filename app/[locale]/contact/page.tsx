@@ -50,6 +50,7 @@ export default async function ContactPage({ params }: Props) {
     pathname: "/contact",
     name: pageT("metaTitle"),
     description: pageT("metaDescription"),
+    type: "ContactPage",
   });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(currentLocale, [
     { name: "GPS Energy" },

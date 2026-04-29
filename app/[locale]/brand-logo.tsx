@@ -44,6 +44,7 @@ export function BrandLogo({
         height={1060}
         sizes={logoSizes}
         preload={preload}
+        fetchPriority={preload ? "high" : undefined}
         unoptimized
       />
     </span>

@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import { routing, type Locale } from "@/i18n/routing";
 
+const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://gps-energy.com";
+const normalizedSiteUrl = rawSiteUrl.replace(/\/$/, "");
+
 export const siteConfig = {
   name: "GPS Energy",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://gps-energy.com",
+  legalName: "GPS Energy",
+  url: normalizedSiteUrl,
   description: {
     en: "GPS Energy is an Algerian oil and gas company delivering integrated field services, Jet Pump artificial lift, wellhead maintenance, logistics and surface production support.",
     fr: "GPS Energy est une societe algerienne oil and gas specialisee dans les services terrain integres, le Jet Pump, la maintenance wellhead, la logistique et le support production.",
@@ -11,6 +15,8 @@ export const siteConfig = {
   email: "logistic_services@gps-energy.com",
   linkedin: "https://www.linkedin.com/company/gps-energy-dz",
   ogImage: "/hero-wellhead.webp",
+  foundingDate: "2021",
+  lastUpdated: "2026-04-29",
 } as const;
 
 const localeTags: Record<Locale, string> = {
@@ -28,6 +34,23 @@ const seoKeywords = [
   "petroleum logistics Algeria",
 ];
 
+const organizationServiceNames: Record<Locale, string[]> = {
+  en: [
+    "Jet Pump artificial lift",
+    "Welltest and Slickline support",
+    "Wellhead maintenance",
+    "Petroleum logistics",
+    "Surface production support",
+  ],
+  fr: [
+    "Jet Pump artificial lift",
+    "Support Welltest et Slickline",
+    "Maintenance wellhead",
+    "Logistique petroliere",
+    "Support production surface",
+  ],
+};
+
 export function getLocalizedPath(locale: Locale, pathname = "") {
   return `/${locale}${pathname}`;
 }
@@ -38,8 +61,9 @@ export function getAbsoluteUrl(pathname = "") {
 
 export function buildLanguageAlternates(pathname = "") {
   return {
-    en: getLocalizedPath("en", pathname),
-    fr: getLocalizedPath("fr", pathname),
+    en: getAbsoluteUrl(getLocalizedPath("en", pathname)),
+    fr: getAbsoluteUrl(getLocalizedPath("fr", pathname)),
+    "x-default": getAbsoluteUrl(getLocalizedPath("en", pathname)),
   };
 }
 
@@ -62,26 +86,31 @@ export function buildPageMetadata({
   const alternateLocaleTags = routing.locales
     .filter((item) => item !== locale)
     .map((item) => localeTags[item]);
+  const absoluteUrl = getAbsoluteUrl(localizedPath);
+  const absoluteImageUrl = getAbsoluteUrl(siteConfig.ogImage);
+  const metadataTitle =
+    pathname === "" ? `${title} | ${siteConfig.name}` : title;
+  const socialTitle = `${title} | ${siteConfig.name}`;
 
   return {
-    title,
+    title: metadataTitle,
     description,
     keywords: seoKeywords,
     alternates: {
-      canonical: localizedPath,
+      canonical: absoluteUrl,
       languages: buildLanguageAlternates(pathname),
     },
     openGraph: {
       type: "website",
-      url: localizedPath,
-      title,
+      url: absoluteUrl,
+      title: socialTitle,
       description,
       siteName: siteConfig.name,
       locale: localeTags[locale],
       alternateLocale: alternateLocaleTags,
       images: [
         {
-          url: siteConfig.ogImage,
+          url: absoluteImageUrl,
           width: 2200,
           height: 1467,
           alt: imageAlt,
@@ -90,39 +119,80 @@ export function buildPageMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: socialTitle,
       description,
-      images: [siteConfig.ogImage],
+      images: [absoluteImageUrl],
     },
   };
 }
 
 export function buildOrganizationJsonLd(locale: Locale) {
+  const localizedDescription = siteConfig.description[locale];
+
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": `${siteConfig.url}#organization`,
     name: siteConfig.name,
+    legalName: siteConfig.legalName,
     url: siteConfig.url,
     logo: getAbsoluteUrl("/gps-energy-logo-transparent.svg"),
     image: getAbsoluteUrl(siteConfig.ogImage),
-    description: siteConfig.description[locale],
-    foundingDate: "2021",
+    description: localizedDescription,
+    foundingDate: siteConfig.foundingDate,
     email: siteConfig.email,
     sameAs: [siteConfig.linkedin],
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "DZ",
+    },
     areaServed: {
       "@type": "Country",
       name: locale === "fr" ? "Algerie" : "Algeria",
     },
+    serviceArea: {
+      "@type": "Country",
+      name: locale === "fr" ? "Algerie" : "Algeria",
+    },
+    numberOfEmployees: {
+      "@type": "QuantitativeValue",
+      minValue: 11,
+      maxValue: 50,
+    },
     contactPoint: [
       {
         "@type": "ContactPoint",
-        contactType: "customer support",
+        contactType: "sales",
+        email: siteConfig.email,
+        areaServed: "DZ",
+        availableLanguage: routing.locales,
+      },
+      {
+        "@type": "ContactPoint",
+        contactType: "technical support",
         email: siteConfig.email,
         areaServed: "DZ",
         availableLanguage: routing.locales,
       },
     ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name:
+        locale === "fr"
+          ? "Services terrain oil and gas GPS Energy"
+          : "GPS Energy oil and gas field services",
+      itemListElement: organizationServiceNames[locale].map((name) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name,
+          provider: {
+            "@id": `${siteConfig.url}#organization`,
+          },
+          areaServed: "DZ",
+        },
+      })),
+    },
     knowsAbout: [
       "Jet Pump artificial lift",
       "Wellhead maintenance",
@@ -140,11 +210,13 @@ export function buildWebsiteJsonLd(locale: Locale) {
     "@type": "WebSite",
     "@id": `${siteConfig.url}#website`,
     name: siteConfig.name,
-    url: getAbsoluteUrl(getLocalizedPath(locale)),
-    inLanguage: locale,
+    alternateName: "GPS Energy Algeria",
+    url: siteConfig.url,
+    inLanguage: routing.locales,
     publisher: {
       "@id": `${siteConfig.url}#organization`,
     },
+    mainEntityOfPage: getAbsoluteUrl(getLocalizedPath(locale)),
   };
 }
 
@@ -153,6 +225,7 @@ type WebPageJsonLdArgs = {
   pathname?: string;
   name: string;
   description: string;
+  type?: "WebPage" | "AboutPage" | "CollectionPage" | "ContactPage";
 };
 
 export function buildWebPageJsonLd({
@@ -160,17 +233,23 @@ export function buildWebPageJsonLd({
   pathname = "",
   name,
   description,
+  type = "WebPage",
 }: WebPageJsonLdArgs) {
   const url = getAbsoluteUrl(getLocalizedPath(locale, pathname));
 
   return {
     "@context": "https://schema.org",
-    "@type": "WebPage",
+    "@type": type,
     "@id": `${url}#webpage`,
     url,
     name,
     description,
     inLanguage: locale,
+    dateModified: siteConfig.lastUpdated,
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: getAbsoluteUrl(siteConfig.ogImage),
+    },
     isPartOf: {
       "@id": `${siteConfig.url}#website`,
     },
@@ -205,20 +284,26 @@ export function buildServicesJsonLd(
   locale: Locale,
   services: Array<{ title: string; copy: string }>,
 ) {
+  const localizedPagePath = getLocalizedPath(locale, "/services");
+
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
+    "@id": `${getAbsoluteUrl(localizedPagePath)}#services`,
     name:
       locale === "fr"
         ? "Services terrain GPS Energy"
         : "GPS Energy field services",
+    url: getAbsoluteUrl(localizedPagePath),
     itemListElement: services.map((service, index) => ({
       "@type": "ListItem",
       position: index + 1,
       item: {
         "@type": "Service",
+        "@id": `${getAbsoluteUrl(localizedPagePath)}#service-${index + 1}`,
         name: service.title,
         description: service.copy,
+        serviceType: service.title,
         areaServed: "DZ",
         provider: {
           "@id": `${siteConfig.url}#organization`,

@@ -63,6 +63,7 @@ export default async function ServicesPage({ params }: Props) {
     pathname: "/services",
     name: pageT("metaTitle"),
     description: pageT("metaDescription"),
+    type: "CollectionPage",
   });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(currentLocale, [
     { name: "GPS Energy" },

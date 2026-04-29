@@ -61,6 +61,7 @@ export async function SiteHeader({
               <Link
                 key={item.href}
                 href={getLocalizedPath(locale as Locale, item.href)}
+                aria-current={active ? "page" : undefined}
                 className={`transition ${
                   active ? "text-[#0b2d59]" : "hover:text-[#ff6b00]"
                 }`}
@@ -124,6 +125,7 @@ export async function SiteHeader({
                 <Link
                   key={item.href}
                   href={getLocalizedPath(locale as Locale, item.href)}
+                  aria-current={page === item.key ? "page" : undefined}
                   className={`border px-4 py-3 text-sm uppercase tracking-[0.08em] ${
                     page === item.key
                       ? "border-[#ff6b00]/24 bg-[#fff4eb] font-semibold text-[#0b2d59]"

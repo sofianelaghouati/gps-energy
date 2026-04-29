@@ -1,7 +1,7 @@
 {
   "Metadata": {
-    "title": "Driving Innovation in O&G",
-    "description": "GPS Energy is an Algerian oil and gas company delivering integrated field services, Jet Pump artificial lift, wellhead maintenance, logistics and surface production support.",
+    "title": "Oil & Gas Field Services in Algeria",
+    "description": "GPS Energy delivers Algerian oil and gas field services: Jet Pump artificial lift, wellhead maintenance, Welltest, Slickline, logistics and production support.",
     "ogImageAlt": "Oil and gas field operation on wellhead equipment"
   },
   "HomePage": {
@@ -179,8 +179,8 @@
   },
   "Pages": {
     "company": {
-      "metaTitle": "Company",
-      "metaDescription": "GPS Energy is an Algerian oil and gas field services company focused on Jet Pump artificial lift, wellhead maintenance, logistics and production support.",
+      "metaTitle": "Algerian Oil & Gas Field Services Company",
+      "metaDescription": "Learn about GPS Energy, an Algerian oil and gas field services company focused on Jet Pump artificial lift, wellhead maintenance, logistics and production support.",
       "hero": {
         "eyebrow": "Company",
         "title": "Built in Algeria for disciplined field execution.",
@@ -233,8 +233,8 @@
       }
     },
     "services": {
-      "metaTitle": "Services",
-      "metaDescription": "Explore GPS Energy service lines including Jet Pump artificial lift, Welltest and Slickline, Wellhead Maintenance, logistics and production support.",
+      "metaTitle": "Jet Pump, Wellhead & Welltest Services",
+      "metaDescription": "Explore GPS Energy services in Algeria: Jet Pump artificial lift, Welltest and Slickline, Wellhead Maintenance, petroleum logistics and surface production support.",
       "hero": {
         "eyebrow": "Services",
         "title": "Specialized services aligned with production, integrity and intervention needs.",
@@ -261,8 +261,8 @@
       }
     },
     "standards": {
-      "metaTitle": "Standards",
-      "metaDescription": "GPS Energy communicates ISO 9001, ISO 45001 and ISO 14001 certifications as part of its quality, HSE and environmental framework.",
+      "metaTitle": "ISO Quality, HSE & Environmental Standards",
+      "metaDescription": "See how GPS Energy applies ISO 9001, ISO 45001 and ISO 14001 management systems across quality, HSE and environmental responsibility.",
       "hero": {
         "eyebrow": "Standards",
         "title": "Operational discipline backed by certified management systems.",
@@ -293,8 +293,8 @@
       }
     },
     "contact": {
-      "metaTitle": "Contact",
-      "metaDescription": "Contact GPS Energy to discuss Jet Pump deployment, wellhead maintenance, wellsite support or logistics requirements in Algeria.",
+      "metaTitle": "Contact GPS Energy Algeria",
+      "metaDescription": "Contact GPS Energy in Algeria to discuss Jet Pump deployment, wellhead maintenance, Welltest, Slickline, wellsite support or logistics requirements.",
       "hero": {
         "eyebrow": "Contact",
         "title": "Open a direct conversation with the field support team.",

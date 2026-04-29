@@ -62,6 +62,7 @@ export default async function CompanyPage({ params }: Props) {
     pathname: "/company",
     name: pageT("metaTitle"),
     description: pageT("metaDescription"),
+    type: "AboutPage",
   });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd(currentLocale, [
     { name: "GPS Energy" },

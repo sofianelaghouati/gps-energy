@@ -32,6 +32,7 @@ export function PageHero({
       <AmbientMedia
         image={media.image}
         imageAlt={media.alt}
+        preload
         videoSrc={videoSrc}
         videoPoster="/hero-wellhead.webp"
         imageClassName="scale-[1.03] object-cover opacity-28"
