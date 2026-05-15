@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
-import { AmbientMedia } from "../ambient-media";
-import { HomeAnimations } from "../home-animations";
 import { JsonLd } from "../json-ld";
 import { PageHero } from "../page-hero";
+import { InfoCard, MediaPanel, SectionIntro, TextLink } from "../redesign-primitives";
 import { SiteFooter } from "../site-footer";
 import { SiteHeader } from "../site-header";
 import {
@@ -13,16 +12,13 @@ import {
   buildServicesJsonLd,
   buildWebPageJsonLd,
 } from "../seo";
-import {
-  capabilityKeys,
-  jetPointKeys,
-  serviceKeys,
-} from "../site-data";
-import { siteMedia } from "../site-media";
+import { capabilityKeys, jetPointKeys, serviceKeys } from "../site-data";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+const serviceDetailPointKeys = ["first", "second", "third"] as const;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
@@ -47,6 +43,10 @@ export default async function ServicesPage({ params }: Props) {
   const homeT = await getTranslations("HomePage");
   const pageT = await getTranslations("Pages.services");
   const services = serviceKeys.map((key) => ({
+    detail: pageT(`details.${key}.body`),
+    points: serviceDetailPointKeys.map((pointKey) =>
+      pageT(`details.${key}.points.${pointKey}`),
+    ),
     key,
     title: homeT(`services.${key}.title`),
     copy: homeT(`services.${key}.copy`),
@@ -73,20 +73,19 @@ export default async function ServicesPage({ params }: Props) {
 
   return (
     <>
-      <HomeAnimations />
       <JsonLd data={pageJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
       <JsonLd data={servicesJsonLd} />
-      <main className="overflow-hidden bg-[#12396f] text-white">
+      <main className="overflow-hidden bg-white text-[#06111f]">
         <SiteHeader currentPath="/services" locale={locale} page="services" />
         <PageHero
-          backgroundMedia="algeriaElMerkRig"
-          accentMedia="oilWellheadChristmasTree"
+          backgroundMedia="pumpjackField"
+          accentMedia="gpsMain"
           galleryMedia={[
-            "oilPumpjackPermian",
-            "naturalGasWell",
-            "hero",
-            "algeriaElMerkRigNight",
+            "gpsField02",
+            "gpsField03",
+            "gpsField04",
+            "gpsField05",
           ]}
           eyebrow={pageT("hero.eyebrow")}
           title={pageT("hero.title")}
@@ -98,125 +97,100 @@ export default async function ServicesPage({ params }: Props) {
           ]}
         />
 
-        <section className="relative bg-[#edf3fa] px-5 py-18 text-[#0a203d] sm:px-8 lg:px-10">
-          <AmbientMedia
-            image={siteMedia.oilPumpjackPermian.image}
-            imageAlt={siteMedia.oilPumpjackPermian.alt}
-            imageClassName="object-cover object-[64%_center] opacity-12"
-            overlayClassName="bg-[linear-gradient(90deg,rgba(237,243,250,0.97)_0%,rgba(237,243,250,0.91)_48%,rgba(237,243,250,0.88)_100%)]"
-          />
-          <div className="relative mx-auto max-w-7xl">
-            <div data-section-reveal data-reveal-from="left" className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase text-[#ff9a46]">
-                {pageT("core.eyebrow")}
-              </p>
-              <h2 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl">
-                {pageT("core.title")}
-              </h2>
-            </div>
-            <div className="mt-10 grid gap-4 lg:grid-cols-3">
+        <section className="bg-[#eaf0f6] px-5 py-20 sm:px-8 lg:px-10">
+          <div className="mx-auto max-w-7xl">
+            <SectionIntro
+              eyebrow={pageT("core.eyebrow")}
+              title={pageT("core.title")}
+              copy={pageT("core.copy")}
+              wide
+            />
+            <div className="mt-12 grid gap-5">
               {services.map((service, index) => (
                 <article
                   key={service.key}
-                  data-section-reveal
-                  data-premium-card
-                  data-reveal-from={services.indexOf(service) % 2 === 0 ? "left" : "right"}
-                  className="relative overflow-hidden border border-black/10 bg-white p-6 shadow-sm"
+                  id={service.key}
+                  className="hover-lift scroll-mt-28 border border-[#c9d7e5] border-l-4 border-l-[#042a54] bg-white p-6 shadow-sm sm:p-8 lg:grid lg:grid-cols-[0.82fr_1.18fr] lg:gap-12"
                 >
-                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#ffb466] to-[#12396f]" />
-                  <div className="flex items-start justify-between gap-4">
-                    <span className="font-mono text-xs text-[#12396f]">
+                  <div>
+                    <p className="text-sm font-medium text-[#042a54]">
                       0{index + 1}
-                    </span>
-                    <span className="inline-flex h-10 min-w-10 items-center justify-center border border-black/10 bg-[#f3f7fb] px-3 text-[0.68rem] font-semibold uppercase">
-                      O&amp;G
-                    </span>
+                    </p>
+                    <h2 className="mt-5 text-4xl font-light leading-[1.08] text-[#06111f] sm:text-5xl">
+                      {service.title}
+                    </h2>
+                    <p className="mt-6 text-base leading-7 text-[#566373]">
+                      {service.copy}
+                    </p>
                   </div>
-                  <h3 className="mt-10 text-2xl font-semibold leading-tight">
-                    {service.title}
-                  </h3>
-                  <p className="mt-5 text-sm leading-6 text-[#546273]">
-                    {service.copy}
-                  </p>
-                  <p className="mt-8 border-t border-black/10 pt-5 text-sm font-semibold text-[#0a203d]">
-                    {service.benefit}
-                  </p>
+                  <div className="mt-10 lg:mt-0">
+                    <p className="text-lg leading-8 text-[#263242]">
+                      {service.detail}
+                    </p>
+                    <div className="mt-8 grid gap-px overflow-hidden border border-[#d9e0e7] bg-[#d9e0e7] sm:grid-cols-3">
+                      {service.points.map((point) => (
+                        <div
+                          key={point}
+                          className="hover-lift bg-[#f7f9fb] p-5 text-sm leading-6 text-[#263242]"
+                        >
+                          {point}
+                        </div>
+                      ))}
+                    </div>
+                    <p className="mt-7 border-t border-[#d9e0e7] pt-5 text-sm font-medium leading-6 text-[#042a54]">
+                      {service.benefit}
+                    </p>
+                  </div>
                 </article>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="relative bg-white px-5 py-18 text-[#0a203d] sm:px-8 lg:px-10">
-          <AmbientMedia
-            image={siteMedia.naturalGasWell.image}
-            imageAlt={siteMedia.naturalGasWell.alt}
-            imageClassName="object-cover object-[76%_center] opacity-9"
-            overlayClassName="bg-[linear-gradient(90deg,rgba(255,255,255,0.98)_0%,rgba(255,255,255,0.94)_50%,rgba(255,255,255,0.9)_100%)]"
-          />
-          <div className="relative mx-auto max-w-7xl">
-            <div data-section-reveal data-reveal-from="left" className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase text-[#12396f]">
-                {pageT("support.eyebrow")}
-              </p>
-              <h2 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl">
-                {pageT("support.title")}
-              </h2>
-              <p className="mt-6 max-w-2xl text-base leading-7 text-[#546273]">
-                {pageT("support.copy")}
-              </p>
-            </div>
-            <div className="mt-10 grid gap-px overflow-hidden border border-black/10 bg-black/10 md:grid-cols-2 xl:grid-cols-3">
-              {capabilities.map((item) => (
-                <article
-                  key={item.key}
-                  data-section-reveal
-                  data-premium-card
-                  data-reveal-from={capabilities.indexOf(item) % 2 === 0 ? "left" : "right"}
-                  className="bg-[#f5f8fc] p-6"
-                >
-                  <h3 className="text-2xl font-semibold text-[#0a203d]">
-                    {item.title}
-                  </h3>
-                  <p className="mt-4 text-sm leading-6 text-[#546273]">
-                    {item.copy}
-                  </p>
-                </article>
-              ))}
-            </div>
+        <section className="bg-[#042a54] px-5 py-16 sm:px-8 lg:px-10">
+          <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-3">
+            <MediaPanel className="min-h-[360px]" mediaKey="gpsMain" priority />
+            <MediaPanel className="min-h-[360px]" mediaKey="gpsField04" />
+            <MediaPanel className="min-h-[360px]" mediaKey="wellheadDetail" />
           </div>
         </section>
 
-        <section className="relative border-y border-white/10 bg-[#0f3f74] px-5 py-18 text-white sm:px-8 lg:px-10">
-          <AmbientMedia
-            image={siteMedia.algeriaElMerkRigNight.image}
-            imageAlt={siteMedia.algeriaElMerkRigNight.alt}
-            imageClassName="object-cover object-center opacity-18"
-            overlayClassName="bg-[linear-gradient(90deg,rgba(15,63,116,0.94)_0%,rgba(18,57,111,0.84)_50%,rgba(11,45,89,0.8)_100%)]"
-          />
-          <div className="relative mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.05fr_0.95fr]">
-            <div
-              data-section-reveal
-              data-reveal-from="left"
-              className="border border-white/10 bg-white/[0.03] p-7 backdrop-blur-sm sm:p-10"
-            >
-              <p className="text-xs font-semibold uppercase text-[#ff9a46]">
-                {pageT("focus.eyebrow")}
-              </p>
-              <h2 className="mt-4 text-4xl font-semibold leading-[1.04] sm:text-6xl">
-                {pageT("focus.title")}
-              </h2>
-              <p className="mt-6 max-w-2xl text-base leading-7 text-white/68">
-                {pageT("focus.copy")}
-              </p>
+        <section className="bg-white px-5 py-20 sm:px-8 lg:px-10">
+          <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
+            <div className="border-l-4 border-[#042a54] pl-6 sm:pl-8">
+              <SectionIntro
+                eyebrow={pageT("support.eyebrow")}
+                title={pageT("support.title")}
+                copy={pageT("support.copy")}
+              />
+              <div className="mt-8">
+                <TextLink href={`/${currentLocale}#services`}>
+                  {pageT("support.backToCarousel")}
+                </TextLink>
+              </div>
+              <div className="mt-10 grid gap-px overflow-hidden border border-[#d9e0e7] bg-[#d9e0e7] sm:grid-cols-2">
+                {capabilities.map((item) => (
+                  <InfoCard key={item.key} title={item.title} copy={item.copy} />
+                ))}
+              </div>
             </div>
+            <MediaPanel className="min-h-[620px]" mediaKey="gpsField03" />
+          </div>
+        </section>
 
-            <div className="grid gap-3" data-section-reveal data-reveal-from="right">
+        <section className="bg-[#042a54] px-5 py-20 text-white sm:px-8 lg:px-10">
+          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+            <SectionIntro
+              eyebrow={pageT("focus.eyebrow")}
+              title={pageT("focus.title")}
+              copy={pageT("focus.copy")}
+              invert
+            />
+            <div className="grid content-start gap-3">
               {jetPoints.map((point) => (
                 <div
                   key={point}
-                  data-premium-card
-                  className="border border-white/10 bg-black/20 px-5 py-4 text-sm font-medium text-white"
+                  className="border border-white/16 bg-white/[0.04] px-5 py-4 text-base font-medium text-white"
                 >
                   {point}
                 </div>

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     default: siteConfig.name,
     template: `%s | ${siteConfig.name}`,
   },
-  description: siteConfig.description.en,
+  description: siteConfig.description.fr,
   alternates: {
     languages: buildLanguageAlternates(""),
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     icon: [
       { url: "/favicon.ico" },
       {
-        url: "/gps-energy-logo-transparent.svg?v=blue-orange-performance",
+        url: "/gps-energy-logo-transparent.svg",
         type: "image/svg+xml",
       },
     ],
@@ -74,7 +74,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   colorScheme: "light",
-  themeColor: "#12396f",
+  themeColor: "#042a54",
 };
 
 export const dynamic = "error";
@@ -107,7 +107,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       data-scroll-behavior="smooth"
       className={`${gpsSans.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="min-h-full bg-[#12396f] text-white">
+      <body className="min-h-full bg-white text-[#06111f]">
         <JsonLd data={organizationJsonLd} />
         <JsonLd data={websiteJsonLd} />
         {children}

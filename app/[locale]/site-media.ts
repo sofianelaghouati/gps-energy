@@ -1,32 +1,32 @@
 import type { StaticImageData } from "next/image";
-import algeriaSaharaDroneImage from "@/public/algeria-sahara-drone-1920.jpg";
+import gpsField01Image from "@/public/gps/gps-field-01.jpeg";
+import gpsField02Image from "@/public/gps/gps-field-02.jpeg";
+import gpsField03Image from "@/public/gps/gps-field-03.jpeg";
+import gpsField04Image from "@/public/gps/gps-field-04.jpeg";
+import gpsField05Image from "@/public/gps/gps-field-05.jpeg";
+import gpsField06Image from "@/public/gps/gps-field-06.jpeg";
+import gpsMainImage from "@/public/gps/gps-main.jpeg";
 import algeriaElMerkRigImage from "@/public/algeria-el-merk-rig-1280.jpg";
-import algeriaElMerkRigNightImage from "@/public/algeria-el-merk-rig-night-1280.jpg";
-import flareStackImage from "@/public/flare-stack-1280.jpg";
-import grandErgCamelImage from "@/public/grand-erg-camel-4608.jpg";
-import hassiMessaoudDesertImage from "@/public/hassi-messaoud-desert-768.jpg";
+import algeriaSaharaDroneImage from "@/public/algeria-sahara-drone-1920.jpg";
 import heroWellheadImage from "@/public/hero-wellhead.webp";
 import naturalGasWellImage from "@/public/natural-gas-wellhead-1280.jpg";
 import oilPumpjackPermianImage from "@/public/oil-pumpjack-permian-1280.jpg";
 import oilWellheadChristmasTreeImage from "@/public/oil-wellhead-christmas-tree-1280.jpg";
-import roughnecksImage from "@/public/roughnecks-1600.jpg";
-import tassiliDunesImage from "@/public/tassili-dunes-4032.jpg";
-import unsplashOilfieldRigImage from "@/public/unsplash-oilfield-rig-1920.jpg";
 
 export type SiteMediaKey =
-  | "hero"
-  | "roughnecks"
-  | "flareStack"
-  | "algeriaElMerkRig"
-  | "algeriaElMerkRigNight"
-  | "naturalGasWell"
-  | "oilPumpjackPermian"
-  | "oilWellheadChristmasTree"
-  | "unsplashOilfieldRig"
-  | "saharaDrone"
-  | "tassiliDunes"
-  | "grandErgCamel"
-  | "hassiMessaoud";
+  | "gpsMain"
+  | "gpsField01"
+  | "gpsField02"
+  | "gpsField03"
+  | "gpsField04"
+  | "gpsField05"
+  | "gpsField06"
+  | "desertAerial"
+  | "fieldWellheadHero"
+  | "gasWell"
+  | "industryRig"
+  | "pumpjackField"
+  | "wellheadDetail";
 
 export type SiteMediaEntry = {
   alt: string;
@@ -34,56 +34,56 @@ export type SiteMediaEntry = {
 };
 
 export const siteMedia: Record<SiteMediaKey, SiteMediaEntry> = {
-  hero: {
-    alt: "Oil and gas wellhead operation at field level",
-    image: heroWellheadImage,
+  gpsMain: {
+    alt: "Technicien GPS Energy sur une installation wellhead",
+    image: gpsMainImage,
   },
-  roughnecks: {
-    alt: "Roughnecks working on a drilling rig",
-    image: roughnecksImage,
+  gpsField01: {
+    alt: "Equipe GPS Energy en intervention terrain oil and gas",
+    image: gpsField01Image,
   },
-  flareStack: {
-    alt: "Gas flare stack at an oil refinery",
-    image: flareStackImage,
+  gpsField02: {
+    alt: "Technicien GPS Energy sur site industriel",
+    image: gpsField02Image,
   },
-  algeriaElMerkRig: {
-    alt: "Rig 810 at the El Merk oil field in the Algerian Sahara",
-    image: algeriaElMerkRigImage,
+  gpsField03: {
+    alt: "Operation GPS Energy sur equipement de production",
+    image: gpsField03Image,
   },
-  algeriaElMerkRigNight: {
-    alt: "Rig 810 at night in the El Merk oil field in Algeria",
-    image: algeriaElMerkRigNightImage,
+  gpsField04: {
+    alt: "Installation et support terrain GPS Energy",
+    image: gpsField04Image,
   },
-  naturalGasWell: {
-    alt: "Natural gas wellhead equipment in an oil and gas field",
-    image: naturalGasWellImage,
+  gpsField05: {
+    alt: "Equipe GPS Energy autour d'un equipement wellhead",
+    image: gpsField05Image,
   },
-  oilPumpjackPermian: {
-    alt: "Oil pumpjack operating in a dry field environment",
-    image: oilPumpjackPermianImage,
+  gpsField06: {
+    alt: "Support operationnel GPS Energy sur site",
+    image: gpsField06Image,
   },
-  oilWellheadChristmasTree: {
-    alt: "Oil wellhead Christmas tree with red valves",
-    image: oilWellheadChristmasTreeImage,
-  },
-  unsplashOilfieldRig: {
-    alt: "Oil drilling rig standing in a field under a clear sky",
-    image: unsplashOilfieldRigImage,
-  },
-  saharaDrone: {
-    alt: "Aerial view of dunes in the Algerian Sahara",
+  desertAerial: {
+    alt: "Vue aerienne du Sahara algerien",
     image: algeriaSaharaDroneImage,
   },
-  tassiliDunes: {
-    alt: "Dunes and rock formations at Tassili n'Ajjer in the Algerian Sahara",
-    image: tassiliDunesImage,
+  fieldWellheadHero: {
+    alt: "Operation oil and gas sur equipement wellhead",
+    image: heroWellheadImage,
   },
-  grandErgCamel: {
-    alt: "Camel and large dune in the Grand Erg Oriental in Algeria",
-    image: grandErgCamelImage,
+  gasWell: {
+    alt: "Equipement de tete de puits gaz naturel",
+    image: naturalGasWellImage,
   },
-  hassiMessaoud: {
-    alt: "Desert landscape near Hassi Messaoud, Algeria",
-    image: hassiMessaoudDesertImage,
+  industryRig: {
+    alt: "Rig industriel dans le Sahara algerien",
+    image: algeriaElMerkRigImage,
+  },
+  pumpjackField: {
+    alt: "Pompe de production dans un champ petrolier",
+    image: oilPumpjackPermianImage,
+  },
+  wellheadDetail: {
+    alt: "Detail d'un equipement wellhead oil and gas",
+    image: oilWellheadChristmasTreeImage,
   },
 };

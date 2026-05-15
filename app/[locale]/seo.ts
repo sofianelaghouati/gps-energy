@@ -14,7 +14,7 @@ export const siteConfig = {
   },
   email: "logistic_services@gps-energy.com",
   linkedin: "https://www.linkedin.com/company/gps-energy-dz",
-  ogImage: "/hero-wellhead.webp",
+  ogImage: "/gps/gps-main.jpeg",
   foundingDate: "2021",
   lastUpdated: "2026-04-29",
 } as const;
@@ -36,18 +36,18 @@ const seoKeywords = [
 
 const organizationServiceNames: Record<Locale, string[]> = {
   en: [
-    "Jet Pump artificial lift",
-    "Welltest and Slickline support",
-    "Wellhead maintenance",
-    "Petroleum logistics",
-    "Surface production support",
+    "Artificial Hydraulic Lift",
+    "Well Testing",
+    "Wellhead Maintenance",
+    "Wellhead Integrity",
+    "Multiphase Pumping",
   ],
   fr: [
-    "Jet Pump artificial lift",
-    "Support Welltest et Slickline",
-    "Maintenance wellhead",
-    "Logistique petroliere",
-    "Support production surface",
+    "Artificial Hydraulic Lift",
+    "Well Testing",
+    "Wellhead Maintenance",
+    "Wellhead Integrity",
+    "Multiphase Pumping",
   ],
 };
 
@@ -63,7 +63,7 @@ export function buildLanguageAlternates(pathname = "") {
   return {
     en: getAbsoluteUrl(getLocalizedPath("en", pathname)),
     fr: getAbsoluteUrl(getLocalizedPath("fr", pathname)),
-    "x-default": getAbsoluteUrl(getLocalizedPath("en", pathname)),
+    "x-default": getAbsoluteUrl(getLocalizedPath("fr", pathname)),
   };
 }
 
@@ -198,6 +198,8 @@ export function buildOrganizationJsonLd(locale: Locale) {
       "Wellhead maintenance",
       "Welltest",
       "Slickline",
+      "Wellhead integrity",
+      "Multiphase pumping",
       "Surface production support",
       "Petroleum logistics",
     ],

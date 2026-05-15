@@ -7,7 +7,7 @@
   aria-label="GPS Energy"
 >
   <title>GPS Energy</title>
-  <rect id="gps-logo-background" width="1280" height="1060" rx="44" fill="#ffffff" />
+  <rect id="gps-logo-background" width="1280" height="1060" rx="44" fill="none" />
   <defs>
     <linearGradient id="gps-navy" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#0b3a68" />
@@ -22,18 +22,18 @@
       <rect width="1280" height="1191" fill="#000" />
       <g fill="#fff" transform="translate(655 410)">
         <circle r="305" />
-        <rect x="-64" y="-380" width="128" height="126" rx="18" />
-        <rect x="-64" y="-380" width="128" height="126" rx="18" transform="rotate(45)" />
-        <rect x="-64" y="-380" width="128" height="126" rx="18" transform="rotate(-45)" />
-        <rect x="-64" y="-380" width="128" height="126" rx="18" transform="rotate(90)" />
-        <rect x="-64" y="-380" width="128" height="126" rx="18" transform="rotate(-90)" />
-        <rect x="-64" y="-380" width="128" height="126" rx="18" transform="rotate(135)" />
-        <rect x="-64" y="-380" width="128" height="126" rx="18" transform="rotate(-135)" />
+        <rect x="-52" y="-374" width="104" height="118" rx="16" />
+        <rect x="-52" y="-374" width="104" height="118" rx="16" transform="rotate(45)" />
+        <rect x="-52" y="-374" width="104" height="118" rx="16" transform="rotate(-45)" />
+        <rect x="-52" y="-374" width="104" height="118" rx="16" transform="rotate(90)" />
+        <rect x="-52" y="-374" width="104" height="118" rx="16" transform="rotate(-90)" />
+        <rect x="-52" y="-374" width="104" height="118" rx="16" transform="rotate(135)" />
+        <rect x="-52" y="-374" width="104" height="118" rx="16" transform="rotate(-135)" />
       </g>
       <circle cx="655" cy="410" r="240" fill="#000" />
       <path
         fill="#000"
-        d="M477 636h356v107H477z"
+        d="M461 554h388v191H461z"
       />
     </mask>
   </defs>

@@ -10,8 +10,8 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/",
-        destination: "/en",
-        permanent: true,
+        destination: "/fr",
+        permanent: false,
       },
     ];
   },
@@ -122,6 +122,10 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/gps-energy-logo-transparent.svg",
+        headers: immutableAssetHeaders,
+      },
+      {
+        source: "/gps/:path*",
         headers: immutableAssetHeaders,
       },
     ];

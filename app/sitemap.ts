@@ -11,9 +11,9 @@ const routes = [
     changeFrequency: "weekly",
     priority: 1,
     images: [
-      "/hero-wellhead.webp",
-      "/unsplash-oilfield-rig-1920.jpg",
-      "/algeria-sahara-drone-1920.jpg",
+      "/gps/gps-main.jpeg",
+      "/gps/gps-field-01.jpeg",
+      "/gps/gps-field-02.jpeg",
     ],
   },
   {
@@ -21,9 +21,9 @@ const routes = [
     changeFrequency: "monthly",
     priority: 0.9,
     images: [
-      "/roughnecks-1600.jpg",
-      "/algeria-el-merk-rig-1280.jpg",
-      "/oil-wellhead-christmas-tree-1280.jpg",
+      "/gps/gps-field-02.jpeg",
+      "/gps/gps-main.jpeg",
+      "/gps/gps-field-06.jpeg",
     ],
   },
   {
@@ -31,9 +31,9 @@ const routes = [
     changeFrequency: "monthly",
     priority: 0.9,
     images: [
-      "/algeria-el-merk-rig-1280.jpg",
-      "/oil-pumpjack-permian-1280.jpg",
-      "/natural-gas-wellhead-1280.jpg",
+      "/gps/gps-field-01.jpeg",
+      "/gps/gps-field-03.jpeg",
+      "/gps/gps-field-04.jpeg",
     ],
   },
   {
@@ -41,9 +41,9 @@ const routes = [
     changeFrequency: "monthly",
     priority: 0.8,
     images: [
-      "/flare-stack-1280.jpg",
-      "/algeria-el-merk-rig-night-1280.jpg",
-      "/natural-gas-wellhead-1280.jpg",
+      "/gps/gps-field-04.jpeg",
+      "/gps/gps-field-05.jpeg",
+      "/gps/gps-field-06.jpeg",
     ],
   },
   {
@@ -51,9 +51,9 @@ const routes = [
     changeFrequency: "monthly",
     priority: 0.8,
     images: [
-      "/hero-wellhead.webp",
-      "/algeria-sahara-drone-1920.jpg",
-      "/algeria-el-merk-rig-night-1280.jpg",
+      "/gps/gps-main.jpeg",
+      "/gps/gps-field-01.jpeg",
+      "/gps/gps-field-05.jpeg",
     ],
   },
 ] as const satisfies Array<{
@@ -84,7 +84,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
           en: localizedUrl("en", route.path),
           fr: localizedUrl("fr", route.path),
-          "x-default": localizedUrl("en", route.path),
+          "x-default": localizedUrl("fr", route.path),
         },
       },
       images: route.images.map(absoluteAssetUrl),

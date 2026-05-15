@@ -8,7 +8,7 @@ type BrandLogoProps = {
   framed?: boolean;
 };
 
-const logoSource = "/gps-energy-logo-transparent.svg?v=blue-orange-performance";
+const logoSource = "/gps-energy-logo-transparent.svg?v=clean";
 
 export function BrandLogo({
   className = "",
@@ -32,7 +32,7 @@ export function BrandLogo({
 
   return (
     <span
-      className={`relative block overflow-hidden bg-[#ffffff] ${badgeChrome} ${className}`}
+      className={`relative block overflow-hidden bg-transparent ${badgeChrome} ${className}`}
       data-brand-ui="true"
     >
       <Image

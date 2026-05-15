@@ -5,16 +5,16 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "GPS Energy",
     short_name: "GPS Energy",
     description:
-      "Integrated oil and gas field services focused on Jet Pump, wellhead maintenance, logistics and production support.",
-    id: "/en",
-    start_url: "/en",
+      "Services terrain oil and gas integres pour la production, l'integrite des puits et le support operationnel.",
+    id: "/fr",
+    start_url: "/fr",
     scope: "/",
-    lang: "en",
+    lang: "fr",
     dir: "ltr",
     display: "standalone",
     orientation: "portrait",
-    background_color: "#12396f",
-    theme_color: "#12396f",
+    background_color: "#ffffff",
+    theme_color: "#042a54",
     categories: ["business", "productivity", "utilities"],
     icons: [
       {
@@ -23,7 +23,7 @@ export default function manifest(): MetadataRoute.Manifest {
         type: "image/x-icon",
       },
       {
-        src: "/gps-energy-logo-transparent.svg?v=blue-orange-performance",
+        src: "/gps-energy-logo-transparent.svg",
         sizes: "any",
         type: "image/svg+xml",
         purpose: "any",

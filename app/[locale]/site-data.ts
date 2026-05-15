@@ -1,4 +1,9 @@
-export type ServiceKey = "lift" | "welltest" | "wellhead";
+export type ServiceKey =
+  | "lift"
+  | "welltest"
+  | "wellhead"
+  | "wellheadIntegrity"
+  | "multiphase";
 export type CompanyKey = "founded" | "structure" | "people" | "market";
 export type CapabilityKey =
   | "equipment"
@@ -11,7 +16,13 @@ export type StandardKey = "quality" | "safety" | "environment";
 export type JetPointKey = "lowPressure" | "sandy" | "unstable" | "surfaceDriven";
 export type SitePageKey = "home" | "company" | "services" | "standards" | "contact";
 
-export const serviceKeys: ServiceKey[] = ["lift", "welltest", "wellhead"];
+export const serviceKeys: ServiceKey[] = [
+  "lift",
+  "welltest",
+  "wellhead",
+  "wellheadIntegrity",
+  "multiphase",
+];
 export const companyKeys: CompanyKey[] = ["founded", "structure", "people", "market"];
 export const capabilityKeys: CapabilityKey[] = [
   "equipment",
