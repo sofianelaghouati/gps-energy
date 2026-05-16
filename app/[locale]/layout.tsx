@@ -46,8 +46,8 @@ export const metadata: Metadata = {
     icon: [
       { url: "/favicon.ico" },
       {
-        url: "/gps-energy-logo-transparent.svg",
-        type: "image/svg+xml",
+        url: "/gps-energy-logo.png",
+        type: "image/png",
       },
     ],
     shortcut: "/favicon.ico",

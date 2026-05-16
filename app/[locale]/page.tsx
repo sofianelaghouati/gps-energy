@@ -140,7 +140,7 @@ export default async function Home({ params }: Props) {
                 <div className="p-6">
                   <p className="text-sm leading-7">{t("hero.sideCopy")}</p>
                   <div className="mt-5 grid grid-cols-2 gap-2" aria-hidden="true">
-                    {[siteMedia.gpsField01, siteMedia.industryRig].map((item) => (
+                    {[siteMedia.gpsField01, siteMedia.gpsCraneWellheadCover].map((item) => (
                       <div
                         key={item.alt}
                         className="group image-card relative h-24 overflow-hidden border border-white/16"

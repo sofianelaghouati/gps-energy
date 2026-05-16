@@ -136,7 +136,7 @@ export function buildOrganizationJsonLd(locale: Locale) {
     name: siteConfig.name,
     legalName: siteConfig.legalName,
     url: siteConfig.url,
-    logo: getAbsoluteUrl("/gps-energy-logo-transparent.svg"),
+    logo: getAbsoluteUrl("/gps-energy-logo.png"),
     image: getAbsoluteUrl(siteConfig.ogImage),
     description: localizedDescription,
     foundingDate: siteConfig.foundingDate,

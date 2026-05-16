@@ -23,9 +23,9 @@ export default function manifest(): MetadataRoute.Manifest {
         type: "image/x-icon",
       },
       {
-        src: "/gps-energy-logo-transparent.svg",
-        sizes: "any",
-        type: "image/svg+xml",
+        src: "/gps-energy-logo.png",
+        sizes: "1280x1191",
+        type: "image/png",
         purpose: "any",
       },
     ],

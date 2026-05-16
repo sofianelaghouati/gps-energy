@@ -121,7 +121,7 @@ const nextConfig: NextConfig = {
         headers: immutableAssetHeaders,
       },
       {
-        source: "/gps-energy-logo-transparent.svg",
+        source: "/gps-energy-logo.png",
         headers: immutableAssetHeaders,
       },
       {

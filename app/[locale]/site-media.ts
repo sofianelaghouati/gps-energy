@@ -5,6 +5,7 @@ import gpsField03Image from "@/public/gps/gps-field-03.jpeg";
 import gpsField04Image from "@/public/gps/gps-field-04.jpeg";
 import gpsField05Image from "@/public/gps/gps-field-05.jpeg";
 import gpsField06Image from "@/public/gps/gps-field-06.jpeg";
+import gpsCraneWellheadCoverImage from "@/public/gps/gps-crane-wellhead-cover.jpeg";
 import gpsMainImage from "@/public/gps/gps-main.jpeg";
 import algeriaElMerkRigImage from "@/public/algeria-el-merk-rig-1280.jpg";
 import algeriaSaharaDroneImage from "@/public/algeria-sahara-drone-1920.jpg";
@@ -21,6 +22,7 @@ export type SiteMediaKey =
   | "gpsField04"
   | "gpsField05"
   | "gpsField06"
+  | "gpsCraneWellheadCover"
   | "desertAerial"
   | "fieldWellheadHero"
   | "gasWell"
@@ -61,6 +63,10 @@ export const siteMedia: Record<SiteMediaKey, SiteMediaEntry> = {
   gpsField06: {
     alt: "Support operationnel GPS Energy sur site",
     image: gpsField06Image,
+  },
+  gpsCraneWellheadCover: {
+    alt: "Operation de levage sur tete de puits",
+    image: gpsCraneWellheadCoverImage,
   },
   desertAerial: {
     alt: "Vue aerienne du Sahara algerien",

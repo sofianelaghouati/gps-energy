@@ -8,7 +8,7 @@ type BrandLogoProps = {
   framed?: boolean;
 };
 
-const logoSource = "/gps-energy-logo-transparent.svg?v=clean";
+const logoSource = "/gps-energy-logo.png?v=transparent";
 
 export function BrandLogo({
   className = "",
@@ -41,7 +41,7 @@ export function BrandLogo({
         draggable="false"
         src={logoSource}
         width={1280}
-        height={1060}
+        height={1191}
         sizes={logoSizes}
         preload={preload}
         fetchPriority={preload ? "high" : undefined}
